@@ -34,57 +34,7 @@
     };
   </script>
 
-  <style>
-    /* ===== Apple-style reveal animations ===== */
-    @media (prefers-reduced-motion: no-preference) {
-      [data-reveal] {
-        opacity: 0;
-        transform: translateY(32px);
-        transition:
-          opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-          transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-        transition-delay: var(--d, 0ms);
-        will-change: opacity, transform;
-      }
-      [data-reveal="scale"] {
-        transform: translateY(32px) scale(0.96);
-      }
-      [data-reveal].is-visible {
-        opacity: 1;
-        transform: none;
-      }
-
-      .lift-card {
-        transition:
-          transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-          box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .lift-card:hover {
-        transform: translateY(-6px);
-      }
-
-      #hero-inner {
-        will-change: transform, opacity;
-      }
-
-      #site-header {
-        transition: box-shadow 0.4s ease, background-color 0.4s ease;
-      }
-    }
-
-    /* FAQ smooth expand/collapse (runs regardless of motion preference; it's functional) */
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition:
-        max-height 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-        opacity 0.4s ease;
-    }
-    .faq-item.open .faq-answer {
-      opacity: 1;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="font-sans bg-white text-slate-700 antialiased">
@@ -92,8 +42,8 @@
   <!-- ============ HEADER / NAV ============ -->
   <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4" aria-label="Main navigation">
-      <a href="#" class="flex items-center gap-2">
-        <img src="assets/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" />
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" />
         <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
       </a>
 
@@ -101,6 +51,7 @@
       <div class="hidden md:flex items-center gap-8">
         <a href="#features" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Features</a>
         <a href="#how-it-works" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">How It Works</a>
+        <a href="download.html" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Download</a>
         <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">FAQ</a>
         <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition-colors shadow-sm">
           Request a Demo
@@ -122,6 +73,7 @@
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pb-4 pt-2">
       <a href="#features" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Features</a>
       <a href="#how-it-works" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">How It Works</a>
+      <a href="download.html" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Download</a>
       <a href="#faq" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">FAQ</a>
       <a href="#cta" class="mt-2 block rounded-lg bg-accent px-3 py-2 text-center text-base font-semibold text-white hover:bg-accent-hover">Request a Demo</a>
     </div>
@@ -142,12 +94,12 @@
           Distribution Life is the desktop system built for beverage and FMCG distributor offices <br> 
           Developed by Forza Inc in close cooperation with cashiers, office managers, and operators who've spent years reconciling routes, deposits, and driver accounts. Not theory. The real workflow.
         </p>
-        <div data-reveal style="--d: 440ms" class="mt-10">
+        <div data-reveal style="--d: 440ms" class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-black/20">
             Request a Demo
-            <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5M6 12h12"/>
-            </svg>
+          </a>
+          <a href="#features" class="inline-flex items-center rounded-lg border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white hover:bg-white/15 transition-colors">
+            See Features
           </a>
         </div>
       </div>
@@ -365,7 +317,7 @@
 
         <figure data-reveal="scale" class="lift-card mx-auto mt-14 max-w-4xl">
           <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-            <img src="assets/screenshot-login.png" alt="Distribution Life login screen with username and password fields" class="w-full" loading="lazy" />
+            <img src="assets/images/screenshot-login.png" alt="Distribution Life login screen with username and password fields" class="w-full" loading="lazy" />
           </div>
           <figcaption class="mt-4 text-center text-sm text-slate-500">
             <span class="font-semibold text-navy">Secure Login</span> — role-based access so every entry is tied to a named user, not a shared password on a sticky note
@@ -375,7 +327,7 @@
         <div class="mt-10 grid gap-10 lg:grid-cols-2">
           <figure data-reveal="scale" class="lift-card">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-              <img src="assets/screenshot-dashboard.png" alt="Distribution Life dashboard showing today's collections, expenses, deposits, cash in hand, and driver outstanding balances" class="w-full" loading="lazy" />
+              <img src="assets/images/screenshot-dashboard.png" alt="Distribution Life dashboard showing today's collections, expenses, deposits, cash in hand, and driver outstanding balances" class="w-full" loading="lazy" />
             </div>
             <figcaption class="mt-4 text-center text-sm text-slate-500">
               <span class="font-semibold text-navy">Today's Overview</span> — the numbers that matter, on one screen: collections, shortfalls, cash in hand, and driver outstanding
@@ -384,7 +336,7 @@
 
           <figure data-reveal="scale" style="--d: 150ms" class="lift-card">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-              <img src="assets/screenshot-user-guide.png" alt="Distribution Life built-in user guide describing the daily workflow from login to end-of-day reports" class="w-full" loading="lazy" />
+              <img src="assets/images/screenshot-user-guide.png" alt="Distribution Life built-in user guide describing the daily workflow from login to end-of-day reports" class="w-full" loading="lazy" />
             </div>
             <figcaption class="mt-4 text-center text-sm text-slate-500">
               <span class="font-semibold text-navy">Built-in User Guide</span> — onboarding built in, so new staff learn the daily workflow without calling you every ten minutes
@@ -403,14 +355,14 @@
             Trusted by distributors who run the business
           </h2>
           <p class="mt-4 text-lg text-slate-600">
-            Not a pilot. Not a prototype. Real offices closing books on Distributors Life every day.
+            Not a pilot. Not a prototype. Real offices closing books on Distribution Life every day.
           </p>
         </div>
 
         <div data-reveal="scale" style="--d: 120ms" class="mx-auto mt-12 max-w-lg">
           <article class="lift-card rounded-2xl border border-slate-200 bg-white p-8 sm:p-10 text-center shadow-sm hover:shadow-lg">
             <div class="flex items-center justify-center py-4">
-              <img src="assets/coca-cola-logo.png" alt="The Coca-Cola Company" class="h-20 sm:h-24 md:h-28 w-auto max-w-[min(100%,320px)] object-contain" loading="lazy" />
+              <img src="assets/images/coca-cola-logo.png" alt="The Coca-Cola Company" class="h-20 sm:h-24 md:h-28 w-auto max-w-[min(100%,320px)] object-contain" loading="lazy" />
             </div>
             <h3 class="mt-4 text-xl font-bold text-navy">Shafqat Traders</h3>
             <p class="mt-2 text-sm leading-relaxed text-slate-600">
@@ -427,10 +379,12 @@
         </div>
 
         <p data-reveal style="--d: 200ms" class="mx-auto mt-8 max-w-xl text-center text-xs leading-relaxed text-slate-400">
-          Coca-Cola is a registered trademark of The Coca-Cola Company. Shafqat Traders is an independent authorized distributor. Distributors Life is not affiliated with or endorsed by The Coca-Cola Company.
+          Coca-Cola is a registered trademark of The Coca-Cola Company. Shafqat Traders is an independent authorized distributor. Distribution Life is not affiliated with or endorsed by The Coca-Cola Company.
         </p>
       </div>
-    </section>    <!-- ============ 6. CTA BAND ============ -->
+    </section>
+
+    <!-- ============ 6. CTA BAND ============ -->
     <section id="cta" class="bg-accent">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
         <h2 data-reveal class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
@@ -467,6 +421,21 @@
         </div>
 
         <div data-reveal style="--d: 150ms" class="mt-12 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
+
+          <!-- FAQ: Updates -->
+          <div class="faq-item">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="text-base font-semibold text-navy">How do updates work?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
+              <div class="pb-5">
+                When a new version is ready, we post it on the Download page. Open the app as usual — you can install the latest build from there whenever your office is ready to update.
+              </div>
+            </div>
+          </div>
 
           <!-- FAQ 2 -->
           <div class="faq-item">
@@ -524,7 +493,7 @@
       <div class="flex flex-col items-center gap-8 text-center sm:flex-row sm:justify-between sm:text-left">
         <div>
           <div class="flex items-center justify-center gap-2 sm:justify-start">
-            <img src="assets/HomeIcon.png" alt="Distribution Life logo" class="h-7 w-7" />
+            <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-7 w-7" />
             <span class="text-base font-bold text-white">Distribution Life</span>
           </div>
           <p class="mt-2 max-w-sm text-sm text-slate-400">
@@ -557,135 +526,6 @@
     </div>
   </footer>
 
-  <script>
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    // ===== Contact / mailto fallbacks =====
-    const CONTACT_EMAIL = 'i240824@isb.nu.edu.pk';
-    const copyEmailBtn = document.getElementById('copy-email-btn');
-    const copyEmailFeedback = document.getElementById('copy-email-feedback');
-
-    copyEmailBtn?.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(CONTACT_EMAIL);
-        copyEmailFeedback.textContent = 'Email copied to clipboard.';
-      } catch {
-        window.prompt('Copy this email address:', CONTACT_EMAIL);
-        copyEmailFeedback.textContent = 'Email shown — copy it from the dialog if needed.';
-      }
-      copyEmailFeedback.classList.remove('hidden');
-      window.setTimeout(() => copyEmailFeedback.classList.add('hidden'), 3000);
-    });
-
-    // ===== Mobile nav toggle =====
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-
-    menuBtn.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.toggle('hidden');
-      iconOpen.classList.toggle('hidden', isOpen);
-      iconClose.classList.toggle('hidden', !isOpen);
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    mobileMenu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        iconOpen.classList.remove('hidden');
-        iconClose.classList.add('hidden');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // ===== Scroll-reveal animations (Apple-style fade/slide-up with stagger) =====
-    const heroReveals = document.querySelectorAll('#hero [data-reveal]');
-    const scrollReveals = document.querySelectorAll('[data-reveal]:not(#hero [data-reveal])');
-
-    // Hero animates in on page load
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        heroReveals.forEach((el) => el.classList.add('is-visible'));
-      });
-    });
-
-    // Everything else animates in as it scrolls into view
-    if ('IntersectionObserver' in window && !prefersReducedMotion) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
-      );
-      scrollReveals.forEach((el) => observer.observe(el));
-    } else {
-      scrollReveals.forEach((el) => el.classList.add('is-visible'));
-    }
-
-    // ===== Hero parallax: content drifts down and fades as you scroll past =====
-    const heroInner = document.getElementById('hero-inner');
-    if (!prefersReducedMotion && heroInner) {
-      let ticking = false;
-      window.addEventListener(
-        'scroll',
-        () => {
-          if (ticking) return;
-          ticking = true;
-          requestAnimationFrame(() => {
-            const y = window.scrollY;
-            const limit = window.innerHeight;
-            if (y <= limit) {
-              heroInner.style.transform = `translateY(${y * 0.3}px)`;
-              heroInner.style.opacity = String(Math.max(0, 1 - y / (limit * 0.85)));
-            }
-            ticking = false;
-          });
-        },
-        { passive: true }
-      );
-    }
-
-    // ===== Sticky header gains shadow once scrolled =====
-    const header = document.getElementById('site-header');
-    window.addEventListener(
-      'scroll',
-      () => {
-        header.classList.toggle('shadow-md', window.scrollY > 8);
-      },
-      { passive: true }
-    );
-
-    // ===== FAQ accordion with smooth height animation =====
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach((item) => {
-      const toggle = item.querySelector('.faq-toggle');
-      const answer = item.querySelector('.faq-answer');
-      const chevron = item.querySelector('.faq-chevron');
-
-      toggle.addEventListener('click', () => {
-        const willOpen = !item.classList.contains('open');
-
-        faqItems.forEach((other) => {
-          other.classList.remove('open');
-          other.querySelector('.faq-answer').style.maxHeight = '0px';
-          other.querySelector('.faq-chevron').classList.remove('rotate-180');
-          other.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
-        });
-
-        if (willOpen) {
-          item.classList.add('open');
-          answer.style.maxHeight = answer.scrollHeight + 'px';
-          chevron.classList.add('rotate-180');
-          toggle.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  </script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

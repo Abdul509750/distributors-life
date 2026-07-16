@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-07-15",
+  "downloadUrl": "downloads/DistributionLife.exe",
+  "fileName": "DistributionLife.exe",
+  "sha256": "",
+  "releaseNotes": "First public release of Distribution Life for Windows.",
+  "mandatory": false,
+  "minSupportedVersion": "1.0.0"
+}
