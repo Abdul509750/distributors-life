@@ -4,7 +4,7 @@
   "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
   "fileName": "DistributionLife.exe",
   "sha256": "",
-  "releaseNotes": "Auto-updates, packaging tracking (shells / empties / pallets), driver balance display fixes, and UI polish.",
+  "releaseNotes": "App can update itself. Packaging counts for shells, empties and pallets. Small fixes on the drivers screen.",
   "mandatory": false,
   "minSupportedVersion": "1.0.0"
 }
