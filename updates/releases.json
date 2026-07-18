@@ -1,12 +1,20 @@
 {
   "releases": [
     {
+      "version": "1.0.1",
+      "releaseDate": "2026-07-18",
+      "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
+      "fileName": "DistributionLife.exe",
+      "releaseNotes": "Auto-updates, packaging tracking (shells / empties / pallets), driver balance display fixes, and UI polish.",
+      "latest": true
+    },
+    {
       "version": "1.0.0",
       "releaseDate": "2026-07-15",
       "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
       "fileName": "DistributionLife.exe",
       "releaseNotes": "First public release of Distribution Life for Windows.",
-      "latest": true
+      "latest": false
     }
   ]
 }
