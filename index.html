@@ -1,531 +1,531 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Distribution Life </title>
-  <meta name="description" content="Distribution Life by Forza Inc. is distributor management software built for beverage and FMCG offices — developed in cooperation with operators who know route collections, bank deposits, treasury, and end-of-day closing." />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Distribution Life </title>
+ <meta name="description" content="Distribution Life by Forza Inc. is distributor management software built for beverage and FMCG offices. Developed in cooperation with operators who know route collections, bank deposits, treasury, and end-of-day closing." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
-          },
-          colors: {
-            navy: {
-              DEFAULT: '#1A1A1A',
-              light: '#2E2E2E',
-              dark: '#0D0D0D',
-            },
-            accent: {
-              DEFAULT: '#C4161C',
-              hover: '#A31217',
-            },
-          },
-        },
-      },
-    };
-  </script>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ fontFamily: {
+ sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+ },
+ colors: {
+ navy: {
+ DEFAULT: '#1A1A1A',
+ light: '#2E2E2E',
+ dark: '#0D0D0D',
+ },
+ accent: {
+ DEFAULT: '#C4161C',
+ hover: '#A31217',
+ },
+ },
+ },
+ },
+ };
+ </script>
 
-  <link rel="stylesheet" href="css/styles.css" />
+ <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="font-sans bg-white text-slate-700 antialiased">
 
-  <!-- ============ HEADER / NAV ============ -->
-  <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4" aria-label="Main navigation">
-      <a href="index.html" class="flex items-center gap-2">
-        <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" />
-        <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
-      </a>
+ <!-- ============ HEADER / NAV ============ -->
+ <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+ <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4" aria-label="Main navigation">
+ <a href="index.html" class="flex items-center gap-2">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" />
+ <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
+ </a>
 
-      <!-- Desktop nav -->
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#features" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Features</a>
-        <a href="#how-it-works" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">How It Works</a>
-        <a href="download.html" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Download</a>
-        <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">FAQ</a>
-        <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition-colors shadow-sm">
-          Request a Demo
-        </a>
-      </div>
+ <!-- Desktop nav -->
+ <div class="hidden md:flex items-center gap-8">
+ <a href="#features" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Features</a>
+ <a href="#how-it-works" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">How It Works</a>
+ <a href="download.html" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Download</a>
+ <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">FAQ</a>
+ <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition-colors shadow-sm">
+ Request a Demo
+ </a>
+ </div>
 
-      <!-- Mobile menu button -->
-      <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-100" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
-        <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-        <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-    </nav>
+ <!-- Mobile menu button -->
+ <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-100" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+ <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+ </svg>
+ <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+ </svg>
+ </button>
+ </nav>
 
-    <!-- Mobile nav panel -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pb-4 pt-2">
-      <a href="#features" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Features</a>
-      <a href="#how-it-works" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">How It Works</a>
-      <a href="download.html" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Download</a>
-      <a href="#faq" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">FAQ</a>
-      <a href="#cta" class="mt-2 block rounded-lg bg-accent px-3 py-2 text-center text-base font-semibold text-white hover:bg-accent-hover">Request a Demo</a>
-    </div>
-  </header>
+ <!-- Mobile nav panel -->
+ <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pb-4 pt-2">
+ <a href="#features" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Features</a>
+ <a href="#how-it-works" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">How It Works</a>
+ <a href="download.html" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">Download</a>
+ <a href="#faq" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50">FAQ</a>
+ <a href="#cta" class="mt-2 block rounded-lg bg-accent px-3 py-2 text-center text-base font-semibold text-white hover:bg-accent-hover">Request a Demo</a>
+ </div>
+ </header>
 
-  <main>
+ <main>
 
-    <!-- ============ 1. HERO ============ -->
-    <section id="hero" class="bg-navy text-white overflow-hidden">
-      <div id="hero-inner" class="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-32 text-center">
-        <p data-reveal style="--d: 0ms" class="mb-4 inline-block rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-300">
-          Built for distributors · With the people who know the business
-        </p>
-        <h1 data-reveal style="--d: 120ms" class="mx-auto max-w-3xl text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-          Close every day knowing exactly where your money went.
-        </h1>
-        <p data-reveal style="--d: 280ms" class="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-slate-300 leading-relaxed">
-          Distribution Life is the desktop system built for beverage and FMCG distributor offices <br> 
-          Developed by Forza Inc. in close cooperation with cashiers, office managers, and operators who've spent years reconciling routes, deposits, and driver accounts. Not theory. The real workflow.
-        </p>
-        <div data-reveal style="--d: 440ms" class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-black/20">
-            Request a Demo
-          </a>
-          <a href="#features" class="inline-flex items-center rounded-lg border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white hover:bg-white/15 transition-colors">
-            See Features
-          </a>
-        </div>
-      </div>
-    </section>
+ <!-- ============ 1. HERO ============ -->
+ <section id="hero" class="bg-navy text-white overflow-hidden">
+ <div id="hero-inner" class="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-32 text-center">
+ <p data-reveal style="--d: 0ms" class="mb-4 inline-block rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-300">
+ Built for distributors With the people who know the business
+ </p>
+ <h1 data-reveal style="--d: 120ms" class="mx-auto max-w-3xl text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+ Close every day knowing exactly where your money went.
+ </h1>
+ <p data-reveal style="--d: 280ms" class="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-slate-300 leading-relaxed">
+ Distribution Life is the desktop system built for beverage and FMCG distributor offices <br> 
+ Developed by Forza Inc. in close cooperation with cashiers, office managers, and operators who've spent years reconciling routes, deposits, and driver accounts. Not theory. The real workflow.
+ </p>
+ <div data-reveal style="--d: 440ms" class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+ <a href="#cta" class="inline-flex items-center rounded-lg bg-accent px-8 py-4 text-base font-semibold text-white hover:bg-accent-hover transition-colors shadow-lg shadow-black/20">
+ Request a Demo
+ </a>
+ <a href="#features" class="inline-flex items-center rounded-lg border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white hover:bg-white/15 transition-colors">
+ See Features
+ </a>
+ </div>
+ </div>
+ </section>
 
-    <!-- ============ BUILT FOR · BY · WITH ============ -->
-    <section class="border-b border-slate-200 bg-white py-14 sm:py-16">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="grid gap-10 md:grid-cols-3 md:gap-8">
-          <div data-reveal class="text-center md:text-left">
-            <p class="text-xs font-bold uppercase tracking-widest text-accent">Built for</p>
-            <h2 class="mt-2 text-lg font-bold text-navy">Distributor offices that can't afford guesswork</h2>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Route collections, bank deposits, petty cash, driver shortages — the daily grind of a distribution back office. Every screen exists because that grind is real.
-            </p>
-          </div>
-          <div data-reveal style="--d: 120ms" class="text-center md:text-left">
-            <p class="text-xs font-bold uppercase tracking-widest text-accent">Built by</p>
-            <h2 class="mt-2 text-lg font-bold text-navy">Forza Inc. — focused on distribution finance</h2>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              A product team that treats distributor operations as a discipline, not an afterthought. Professional software engineering applied to the problems offices actually face.
-            </p>
-          </div>
-          <div data-reveal style="--d: 240ms" class="text-center md:text-left">
-            <p class="text-xs font-bold uppercase tracking-widest text-accent">Built with</p>
-            <h2 class="mt-2 text-lg font-bold text-navy">Operators who've lived this business</h2>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Shaped in cooperation with the people who encode receipts at 7 PM, chase driver shortfalls, and need reports the accountant will sign off on — without an argument.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+ <!-- ============ BUILT FOR BY WITH ============ -->
+ <section class="border-b border-slate-200 bg-white py-14 sm:py-16">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div class="grid gap-10 md:grid-cols-3 md:gap-8">
+ <div data-reveal class="text-center md:text-left">
+ <p class="text-xs font-bold uppercase tracking-widest text-accent">Built for</p>
+ <h2 class="mt-2 text-lg font-bold text-navy">Distributor offices that can't afford guesswork</h2>
+ <p class="mt-2 text-sm leading-relaxed text-slate-600">
+ Route collections, bank deposits, petty cash, driver shortages. The daily grind of a distribution back office. Every screen exists because that grind is real.
+ </p>
+ </div>
+ <div data-reveal style="--d: 120ms" class="text-center md:text-left">
+ <p class="text-xs font-bold uppercase tracking-widest text-accent">Built by</p>
+ <h2 class="mt-2 text-lg font-bold text-navy">Forza Inc. focused on distribution finance</h2>
+ <p class="mt-2 text-sm leading-relaxed text-slate-600">
+ A product team that treats distributor operations as a discipline, not an afterthought. Professional software engineering applied to the problems offices actually face.
+ </p>
+ </div>
+ <div data-reveal style="--d: 240ms" class="text-center md:text-left">
+ <p class="text-xs font-bold uppercase tracking-widest text-accent">Built with</p>
+ <h2 class="mt-2 text-lg font-bold text-navy">Operators who've lived this business</h2>
+ <p class="mt-2 text-sm leading-relaxed text-slate-600">
+ Shaped in cooperation with the people who encode receipts at 7 PM, chase driver shortfalls, and need reports the accountant will sign off on. Without an argument.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- ============ 2. PROBLEM → SOLUTION ============ -->
-    <section class="py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
-          <!-- Problem -->
-          <div data-reveal>
-            <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">The problem</p>
-            <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
-              Your office runs on cash. Your records still run on hope.
-            </h2>
-            <p class="mt-4 text-base leading-relaxed">
-              When collections live in one ledger, deposits in another, and driver balances in someone's head, the office doesn't have control — it has habits. And habits break the moment a route comes up short, a deposit slips a day, or the principal asks for a number nobody can produce on the spot.
-            </p>
-            <ul class="mt-6 space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-                <span>End-of-day reconciliation that steals hours from people already exhausted</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-                <span>Deposits and collections that never quite add up — and nobody can prove why</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-                <span>Driver accountability that depends on memory instead of a permanent record</span>
-              </li>
-            </ul>
-          </div>
+ <!-- ============ 2. PROBLEM → SOLUTION ============ -->
+ <section class="py-20 sm:py-24">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+ <!-- Problem -->
+ <div data-reveal>
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">The problem</p>
+ <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
+ Your office runs on cash. Your records still run on hope.
+ </h2>
+ <p class="mt-4 text-base leading-relaxed">
+ When collections live in one ledger, deposits in another, and driver balances in someone's head, the office doesn't have control. It has habits. And habits break the moment a route comes up short, a deposit slips a day, or the principal asks for a number nobody can produce on the spot.
+ </p>
+ <ul class="mt-6 space-y-3">
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ <span>End-of-day reconciliation that steals hours from people already exhausted</span>
+ </li>
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ <span>Deposits and collections that never quite add up. And nobody can prove why</span>
+ </li>
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ <span>Driver accountability that depends on memory instead of a permanent record</span>
+ </li>
+ </ul>
+ </div>
 
-          <!-- Solution -->
-          <div data-reveal="scale" style="--d: 150ms" class="rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:p-10 shadow-sm">
-            <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">The solution</p>
-            <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
-              One ledger. One truth. From the first collection to the last deposit.
-            </h2>
-            <p class="mt-4 text-base leading-relaxed">
-              Distribution Life gives your office a single system of record — every collection tied to its route and driver, every deposit matched to what came in, every expense logged against treasury. Close the day with confidence, not crossed fingers. When something doesn't balance, you'll know exactly what, who, and when.
-            </p>
-            <ul class="mt-6 space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                <span>Same-day collections with full route and driver traceability</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                <span>Deposits reconciled against collections — gaps surface immediately</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                <span>Print-ready reports your accountant, auditor, and principal will respect</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+ <!-- Solution -->
+ <div data-reveal="scale" style="--d: 150ms" class="rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:p-10 shadow-sm">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">The solution</p>
+ <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
+ One ledger. One truth. From the first collection to the last deposit.
+ </h2>
+ <p class="mt-4 text-base leading-relaxed">
+ Distribution Life gives your office a single system of record. Every collection tied to its route and driver, every deposit matched to what came in, every expense logged against treasury. Close the day with confidence, not crossed fingers. When something doesn't balance, you'll know exactly what, who, and when.
+ </p>
+ <ul class="mt-6 space-y-3">
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+ <span>Same-day collections with full route and driver traceability</span>
+ </li>
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+ <span>Deposits reconciled against collections. Gaps surface immediately</span>
+ </li>
+ <li class="flex items-start gap-3">
+ <svg class="mt-0.5 h-5 w-5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+ <span>Print-ready reports your accountant, auditor, and principal will respect</span>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- ============ 3. FEATURES ============ -->
-    <section id="features" class="bg-slate-50 py-20 sm:py-24 border-y border-slate-200">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div data-reveal class="max-w-2xl mx-auto text-center">
-          <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Capabilities</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
-            Every module earns its place — because operators asked for it
-          </h2>
-          <p class="mt-4 text-lg text-slate-600">
-            No bloat. No features nobody uses. Four core workflows that hold a distributor office together — each one shaped by people who've done the job.
-          </p>
-        </div>
+ <!-- ============ 3. FEATURES ============ -->
+ <section id="features" class="bg-slate-50 py-20 sm:py-24 border-y border-slate-200">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="max-w-2xl mx-auto text-center">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Capabilities</p>
+ <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+ Every module earns its place. Because operators asked for it
+ </h2>
+ <p class="mt-4 text-lg text-slate-600">
+ No bloat. No features nobody uses. Four core workflows that hold a distributor office together. Each one shaped by people who've done the job.
+ </p>
+ </div>
 
-        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- Card 1: Route Collections -->
-          <div data-reveal="scale" style="--d: 0ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-              </svg>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Route Collections</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Capture every rupee the moment a route returns — cash, checks, and credit — against the driver and manifest. Know instantly which routes are settled and which are still open.
-            </p>
-          </div>
+ <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+ <!-- Card 1: Route Collections -->
+ <div data-reveal="scale" style="--d: 0ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
+ <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+ <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+ </svg>
+ </div>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Route Collections</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Capture every rupee the moment a route returns. Cash, checks, and credit. Against the driver and manifest. Know instantly which routes are settled and which are still open.
+ </p>
+ </div>
 
-          <!-- Card 2: Bank Deposits -->
-          <div data-reveal="scale" style="--d: 120ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 10l9-6 9 6M5 10v8m4-8v8m6-8v8m4-8v8M3 21h18"/>
-              </svg>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Bank Deposits</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Log deposits by account and tie them to the day's intake. Undeposited cash never hides in a drawer — it shows up on screen before it becomes a crisis.
-            </p>
-          </div>
+ <!-- Card 2: Bank Deposits -->
+ <div data-reveal="scale" style="--d: 120ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
+ <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+ <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 10l9-6 9 6M5 10v8m4-8v8m6-8v8m4-8v8M3 21h18"/>
+ </svg>
+ </div>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Bank Deposits</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Log deposits by account and tie them to the day's intake. Undeposited cash never hides in a drawer. It shows up on screen before it becomes a crisis.
+ </p>
+ </div>
 
-          <!-- Card 3: Treasury & Expenses -->
-          <div data-reveal="scale" style="--d: 240ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3"/>
-              </svg>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Treasury &amp; Expenses</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Fuel, allowances, petty cash, operating costs — all tracked against a live treasury balance with a clear approval trail. Your cash position, always current.
-            </p>
-          </div>
+ <!-- Card 3: Treasury & Expenses -->
+ <div data-reveal="scale" style="--d: 240ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
+ <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+ <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3"/>
+ </svg>
+ </div>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Treasury &amp; Expenses</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Fuel, allowances, petty cash, operating costs. All tracked against a live treasury balance with a clear approval trail. Your cash position, always current.
+ </p>
+ </div>
 
-          <!-- Card 4: Driver Accountability -->
-          <div data-reveal="scale" style="--d: 360ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M9 8h6M7 3h7l5 5v11a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z"/>
-              </svg>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Driver Accountability &amp; Reports</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Full per-driver shortage and overage history, plus daily, weekly, and monthly reports formatted for your printer — ready for signatures, filing, and audit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+ <!-- Card 4: Driver Accountability -->
+ <div data-reveal="scale" style="--d: 360ms" class="lift-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg">
+ <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+ <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M9 8h6M7 3h7l5 5v11a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z"/>
+ </svg>
+ </div>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Driver Accountability &amp; Reports</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Full per-driver shortage and overage history, plus daily, weekly, and monthly reports formatted for your printer. Ready for signatures, filing, and audit.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- ============ 4. HOW IT WORKS ============ -->
-    <section id="how-it-works" class="py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div data-reveal class="max-w-2xl mx-auto text-center">
-          <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">How it works</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
-            The same three steps your best office manager already follows
-          </h2>
-          <p class="mt-4 text-lg text-slate-600">
-            Distribution Life doesn't reinvent your day — it organises it. From route return to locked door, in the order you already work.
-          </p>
-        </div>
+ <!-- ============ 4. HOW IT WORKS ============ -->
+ <section id="how-it-works" class="py-20 sm:py-24">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="max-w-2xl mx-auto text-center">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">How it works</p>
+ <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+ The same three steps your best office manager already follows
+ </h2>
+ <p class="mt-4 text-lg text-slate-600">
+ Distribution Life doesn't reinvent your day. It organises it. From route return to locked door, in the order you already work.
+ </p>
+ </div>
 
-        <ol class="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
-          <!-- Step 1 -->
-          <li data-reveal style="--d: 0ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
-            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">1</span>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Capture what came in</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Trucks return. Receipts get encoded — cash, coins, checks, bank deposits — each tied to the driver and route it belongs to. No loose papers. No "we'll do it tomorrow."
-            </p>
-          </li>
-          <!-- Step 2 -->
-          <li data-reveal style="--d: 150ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
-            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">2</span>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Match deposits and expenses</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Record what went to the bank and what left the treasury. The system reconciles against collections in real time — if the numbers don't agree, you'll see the gap before you leave the building.
-            </p>
-          </li>
-          <!-- Step 3 -->
-          <li data-reveal style="--d: 300ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
-            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">3</span>
-            <h3 class="mt-5 text-lg font-semibold text-navy">Print, sign, and close</h3>
-            <p class="mt-2 text-sm leading-relaxed">
-              Generate the daily summary, driver accountability sheet, and treasury report. Signed, filed, and done — the way a professional office finishes every day.
-            </p>
-          </li>
-        </ol>
-      </div>
-    </section>
+ <ol class="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
+ <!-- Step 1 -->
+ <li data-reveal style="--d: 0ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
+ <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">1</span>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Capture what came in</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Trucks return. Receipts get encoded. Cash, coins, checks, bank deposits. Each tied to the driver and route it belongs to. No loose papers. No "we'll do it tomorrow."
+ </p>
+ </li>
+ <!-- Step 2 -->
+ <li data-reveal style="--d: 150ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
+ <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">2</span>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Match deposits and expenses</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Record what went to the bank and what left the treasury. The system reconciles against collections in real time. If the numbers don't agree, you'll see the gap before you leave the building.
+ </p>
+ </li>
+ <!-- Step 3 -->
+ <li data-reveal style="--d: 300ms" class="relative flex flex-col items-center text-center md:items-start md:text-left">
+ <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">3</span>
+ <h3 class="mt-5 text-lg font-semibold text-navy">Print, sign, and close</h3>
+ <p class="mt-2 text-sm leading-relaxed">
+ Generate the daily summary, driver accountability sheet, and treasury report. Signed, filed, and done. The way a professional office finishes every day.
+ </p>
+ </li>
+ </ol>
+ </div>
+ </section>
 
-    <!-- ============ PRODUCT SCREENSHOTS ============ -->
-    <section id="screenshots" class="bg-slate-50 py-20 sm:py-24 border-y border-slate-200">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div data-reveal class="max-w-2xl mx-auto text-center">
-          <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Product tour</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
-            Software that works the way your office already thinks
-          </h2>
-          <p class="mt-4 text-lg text-slate-600">
-            Clean, focused screens — no clutter, no learning curve from hell. Built with operators, not against them.
-          </p>
-        </div>
+ <!-- ============ PRODUCT SCREENSHOTS ============ -->
+ <section id="screenshots" class="bg-slate-50 py-20 sm:py-24 border-y border-slate-200">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="max-w-2xl mx-auto text-center">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Product tour</p>
+ <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+ Software that works the way your office already thinks
+ </h2>
+ <p class="mt-4 text-lg text-slate-600">
+ Clean, focused screens. No clutter, no learning curve from hell. Built with operators, not against them.
+ </p>
+ </div>
 
-        <figure data-reveal="scale" class="lift-card mx-auto mt-14 max-w-4xl">
-          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-            <img src="assets/images/screenshot-login.png" alt="Distribution Life login screen with username and password fields" class="w-full" loading="lazy" />
-          </div>
-          <figcaption class="mt-4 text-center text-sm text-slate-500">
-            <span class="font-semibold text-navy">Secure Login</span> — role-based access so every entry is tied to a named user, not a shared password on a sticky note
-          </figcaption>
-        </figure>
+ <figure data-reveal="scale" class="lift-card mx-auto mt-14 max-w-4xl">
+ <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+ <img src="assets/images/screenshot-login.png" alt="Distribution Life login screen with username and password fields" class="w-full" loading="lazy" />
+ </div>
+ <figcaption class="mt-4 text-center text-sm text-slate-500">
+ <span class="font-semibold text-navy">Secure Login</span>. Role-based access so every entry is tied to a named user, not a shared password on a sticky note
+ </figcaption>
+ </figure>
 
-        <div class="mt-10 grid gap-10 lg:grid-cols-2">
-          <figure data-reveal="scale" class="lift-card">
-            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-              <img src="assets/images/screenshot-dashboard.png" alt="Distribution Life dashboard showing today's collections, expenses, deposits, cash in hand, and driver outstanding balances" class="w-full" loading="lazy" />
-            </div>
-            <figcaption class="mt-4 text-center text-sm text-slate-500">
-              <span class="font-semibold text-navy">Today's Overview</span> — the numbers that matter, on one screen: collections, shortfalls, cash in hand, and driver outstanding
-            </figcaption>
-          </figure>
+ <div class="mt-10 grid gap-10 lg:grid-cols-2">
+ <figure data-reveal="scale" class="lift-card">
+ <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+ <img src="assets/images/screenshot-dashboard.png" alt="Distribution Life dashboard showing today's collections, expenses, deposits, cash in hand, and driver outstanding balances" class="w-full" loading="lazy" />
+ </div>
+ <figcaption class="mt-4 text-center text-sm text-slate-500">
+ <span class="font-semibold text-navy">Today's Overview</span>. The numbers that matter, on one screen: collections, shortfalls, cash in hand, and driver outstanding
+ </figcaption>
+ </figure>
 
-          <figure data-reveal="scale" style="--d: 150ms" class="lift-card">
-            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-              <img src="assets/images/screenshot-user-guide.png" alt="Distribution Life built-in user guide describing the daily workflow from login to end-of-day reports" class="w-full" loading="lazy" />
-            </div>
-            <figcaption class="mt-4 text-center text-sm text-slate-500">
-              <span class="font-semibold text-navy">Built-in User Guide</span> — onboarding built in, so new staff learn the daily workflow without calling you every ten minutes
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
+ <figure data-reveal="scale" style="--d: 150ms" class="lift-card">
+ <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+ <img src="assets/images/screenshot-user-guide.png" alt="Distribution Life built-in user guide describing the daily workflow from login to end-of-day reports" class="w-full" loading="lazy" />
+ </div>
+ <figcaption class="mt-4 text-center text-sm text-slate-500">
+ <span class="font-semibold text-navy">Built-in User Guide</span>. Onboarding built in, so new staff learn the daily workflow without calling you every ten minutes
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
 
-        <!-- ============ 5. CUSTOMERS IN PRODUCTION ============ -->
-    <section class="pb-20 sm:pb-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div data-reveal class="max-w-2xl mx-auto text-center">
-          <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">In production today</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
-            Trusted by distributors who run the business
-          </h2>
-          <p class="mt-4 text-lg text-slate-600">
-            Not a pilot. Not a prototype. Real offices closing books on Distribution Life every day.
-          </p>
-        </div>
+ <!-- ============ 5. CUSTOMERS IN PRODUCTION ============ -->
+ <section class="pb-20 sm:pb-24">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="max-w-2xl mx-auto text-center">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">In production today</p>
+ <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+ Trusted by distributors who run the business
+ </h2>
+ <p class="mt-4 text-lg text-slate-600">
+ Not a pilot. Not a prototype. Real offices closing books on Distribution Life every day.
+ </p>
+ </div>
 
-        <div data-reveal="scale" style="--d: 120ms" class="mx-auto mt-12 max-w-lg">
-          <article class="lift-card rounded-2xl border border-slate-200 bg-white p-8 sm:p-10 text-center shadow-sm hover:shadow-lg">
-            <div class="flex items-center justify-center py-4">
-              <img src="assets/images/coca-cola-logo.png" alt="The Coca-Cola Company" class="h-20 sm:h-24 md:h-28 w-auto max-w-[min(100%,320px)] object-contain" loading="lazy" />
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-navy">Shafqat Traders</h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Authorized Coca-Cola distributor · Gujranwala
-            </p>
-            <p class="mt-1 text-sm text-slate-500">
-              One of the region's main Coca-Cola distribution offices.
-            </p>
-            <p class="mt-5 inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent">
-              <span class="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true"></span>
-              Active user
-            </p>
-          </article>
-        </div>
+ <div data-reveal="scale" style="--d: 120ms" class="mx-auto mt-12 max-w-lg">
+ <article class="lift-card rounded-2xl border border-slate-200 bg-white p-8 sm:p-10 text-center shadow-sm hover:shadow-lg">
+ <div class="flex items-center justify-center py-4">
+ <img src="assets/images/coca-cola-logo.png" alt="The Coca-Cola Company" class="h-20 sm:h-24 md:h-28 w-auto max-w-[min(100%,320px)] object-contain" loading="lazy" />
+ </div>
+ <h3 class="mt-4 text-xl font-bold text-navy">Shafqat Traders</h3>
+ <p class="mt-2 text-sm leading-relaxed text-slate-600">
+ Authorized Coca-Cola distributor Gujranwala
+ </p>
+ <p class="mt-1 text-sm text-slate-500">
+ One of the region's main Coca-Cola distribution offices.
+ </p>
+ <p class="mt-5 inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent">
+ <span class="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true"></span>
+ Active user
+ </p>
+ </article>
+ </div>
 
-        <p data-reveal style="--d: 200ms" class="mx-auto mt-8 max-w-xl text-center text-xs leading-relaxed text-slate-400">
-          Coca-Cola is a registered trademark of The Coca-Cola Company. Shafqat Traders is an independent authorized distributor. Distribution Life is not affiliated with or endorsed by The Coca-Cola Company.
-        </p>
-      </div>
-    </section>
+ <p data-reveal style="--d: 200ms" class="mx-auto mt-8 max-w-xl text-center text-xs leading-relaxed text-slate-400">
+ Coca-Cola is a registered trademark of The Coca-Cola Company. Shafqat Traders is an independent authorized distributor. Distribution Life is not affiliated with or endorsed by The Coca-Cola Company.
+ </p>
+ </div>
+ </section>
 
-    <!-- ============ 6. CTA BAND ============ -->
-    <section id="cta" class="bg-accent">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
-        <h2 data-reveal class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-          See why offices that switch don't go back to spreadsheets.
-        </h2>
-        <p data-reveal style="--d: 120ms" class="mx-auto mt-4 max-w-xl text-lg text-white/85">
-          Book a walkthrough on your routes, your drivers, your numbers. Thirty minutes — and you'll know if Distribution Life is the system your office has been missing.
-        </p>
-        <div data-reveal style="--d: 240ms" class="mt-8 space-y-4">
-          <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a id="demo-mailto" href="mailto:i240824@isb.nu.edu.pk?subject=Demo%20Request&amp;body=Hi%20Forza%20Inc%20team%2C%0A%0AI%27d%20like%20to%20request%20a%20demo%20of%20Distribution%20Life.%0A%0AName%3A%20%0ACompany%3A%20%0APhone%3A%20%0A" class="inline-flex items-center rounded-lg bg-navy px-8 py-4 text-base font-semibold text-white hover:bg-navy-light transition-colors shadow-lg shadow-black/10">
-              Request a Demo
-            </a>
-            <button type="button" id="copy-email-btn" class="inline-flex items-center rounded-lg border border-white/30 bg-white/10 px-6 py-4 text-base font-semibold text-white hover:bg-white/20 transition-colors">
-              Copy Email
-            </button>
-          </div>
-          <p class="text-sm text-white/80">
-            <a id="contact-email-link" href="mailto:i240824@isb.nu.edu.pk" class="font-medium underline underline-offset-2 hover:text-white">i240824@isb.nu.edu.pk</a>
-            <span class="mx-2 text-white/40">|</span>
-            <a id="gmail-compose-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=i240824@isb.nu.edu.pk&amp;su=Demo%20Request" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-white">Open in Gmail</a>
-          </p>
-          <p id="copy-email-feedback" class="hidden text-sm font-medium text-white" aria-live="polite">Email copied to clipboard.</p>
-        </div>
-      </div>
-    </section>
+ <!-- ============ 6. CTA BAND ============ -->
+ <section id="cta" class="bg-accent">
+ <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+ <h2 data-reveal class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+ See why offices that switch don't go back to spreadsheets.
+ </h2>
+ <p data-reveal style="--d: 120ms" class="mx-auto mt-4 max-w-xl text-lg text-white/85">
+ Book a walkthrough on your routes, your drivers, your numbers. Thirty minutes. And you'll know if Distribution Life is the system your office has been missing.
+ </p>
+ <div data-reveal style="--d: 240ms" class="mt-8 space-y-4">
+ <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
+ <a id="demo-mailto" href="mailto:i240824@isb.nu.edu.pk?subject=Demo%20Request&amp;body=Hi%20Forza%20Inc%20team%2C%0A%0AI%27d%20like%20to%20request%20a%20demo%20of%20Distribution%20Life.%0A%0AName%3A%20%0ACompany%3A%20%0APhone%3A%20%0A" class="inline-flex items-center rounded-lg bg-navy px-8 py-4 text-base font-semibold text-white hover:bg-navy-light transition-colors shadow-lg shadow-black/10">
+ Request a Demo
+ </a>
+ <button type="button" id="copy-email-btn" class="inline-flex items-center rounded-lg border border-white/30 bg-white/10 px-6 py-4 text-base font-semibold text-white hover:bg-white/20 transition-colors">
+ Copy Email
+ </button>
+ </div>
+ <p class="text-sm text-white/80">
+ <a id="contact-email-link" href="mailto:i240824@isb.nu.edu.pk" class="font-medium underline underline-offset-2 hover:text-white">i240824@isb.nu.edu.pk</a>
+ <span class="mx-2 text-white/40">|</span>
+ <a id="gmail-compose-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=i240824@isb.nu.edu.pk&amp;su=Demo%20Request" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-white">Open in Gmail</a>
+ </p>
+ <p id="copy-email-feedback" class="hidden text-sm font-medium text-white" aria-live="polite">Email copied to clipboard.</p>
+ </div>
+ </div>
+ </section>
 
-    <!-- ============ 7. FAQ ============ -->
-    <section id="faq" class="py-20 sm:py-24">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6">
-        <div data-reveal class="text-center">
-          <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">FAQ</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">Straight answers — no sales fluff</h2>
-        </div>
+ <!-- ============ 7. FAQ ============ -->
+ <section id="faq" class="py-20 sm:py-24">
+ <div class="max-w-3xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="text-center">
+ <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">FAQ</p>
+ <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-navy tracking-tight">Straight answers. No sales fluff</h2>
+ </div>
 
-        <div data-reveal style="--d: 150ms" class="mt-12 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
+ <div data-reveal style="--d: 150ms" class="mt-12 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
 
-          <!-- FAQ: Updates -->
-          <div class="faq-item">
-            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
-              <span class="text-base font-semibold text-navy">How do updates work?</span>
-              <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
-              <div class="pb-5">
-                When a new version is ready, we post it on the Download page. Open the app as usual — you can install the latest build from there whenever your office is ready to update.
-              </div>
-            </div>
-          </div>
+ <!-- FAQ: Updates -->
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+ <span class="text-base font-semibold text-navy">How do updates work?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+ </svg>
+ </button>
+ <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
+ <div class="pb-5">
+ When a new version is ready, we post it on the Download page. Open the app as usual. You can install the latest build from there whenever your office is ready to update.
+ </div>
+ </div>
+ </div>
 
-          <!-- FAQ 2 -->
-          <div class="faq-item">
-            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
-              <span class="text-base font-semibold text-navy">Can multiple staff members use it at the same time?</span>
-              <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
-              <div class="pb-5">
-                Yes. Separate accounts for cashiers, encoders, and managers — each with their own permissions. Every entry is attributed to a named user, so accountability isn't optional; it's built in.
-              </div>
-            </div>
-          </div>
+ <!-- FAQ 2 -->
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+ <span class="text-base font-semibold text-navy">Can multiple staff members use it at the same time?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+ </svg>
+ </button>
+ <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
+ <div class="pb-5">
+ Yes. Separate accounts for cashiers, encoders, and managers. Each with their own permissions. Every entry is attributed to a named user, so accountability isn't optional; it's built in.
+ </div>
+ </div>
+ </div>
 
-          <!-- FAQ 3 -->
-          <div class="faq-item">
-            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
-              <span class="text-base font-semibold text-navy">What reports can I print?</span>
-              <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
-              <div class="pb-5">
-                Daily collection summaries, bank deposit reports, treasury and expense ledgers, and per-driver accountability sheets — formatted for standard office printers, ready for signatures, filing, and audit review.
-              </div>
-            </div>
-          </div>
+ <!-- FAQ 3 -->
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+ <span class="text-base font-semibold text-navy">What reports can I print?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+ </svg>
+ </button>
+ <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
+ <div class="pb-5">
+ Daily collection summaries, bank deposit reports, treasury and expense ledgers, and per-driver accountability sheets. Formatted for standard office printers, ready for signatures, filing, and audit review.
+ </div>
+ </div>
+ </div>
 
-          <!-- FAQ 4 -->
-          <div class="faq-item">
-            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
-              <span class="text-base font-semibold text-navy">Who built Distribution Life?</span>
-              <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
-              <div class="pb-5">
-                Distribution Life is a product of Forza Inc. — built for distributor offices and shaped in cooperation with operators who know route collections, deposits, and driver accountability firsthand. It is independent software and is not affiliated with, endorsed by, or sponsored by any beverage or FMCG manufacturer.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+ <!-- FAQ 4 -->
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+ <span class="text-base font-semibold text-navy">Who built Distribution Life?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+ </svg>
+ </button>
+ <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
+ <div class="pb-5">
+ Distribution Life is a product of Forza Inc. built for distributor offices and shaped in cooperation with operators who know route collections, deposits, and driver accountability firsthand. It is independent software and is not affiliated with, endorsed by, or sponsored by any beverage or FMCG manufacturer.
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  </main>
+ </main>
 
-  <!-- ============ 8. FOOTER ============ -->
-  <footer class="bg-navy-dark text-slate-300">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-      <div class="flex flex-col items-center gap-8 text-center sm:flex-row sm:justify-between sm:text-left">
-        <div>
-          <div class="flex items-center justify-center gap-2 sm:justify-start">
-            <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-7 w-7" />
-            <span class="text-base font-bold text-white">Distribution Life</span>
-          </div>
-          <p class="mt-2 max-w-sm text-sm text-slate-400">
-            Professional distributor management software <br>
-            Built for the back office. 
-          </p>
-          <p class="mt-1 text-xs text-slate-500">
-            A product of <span class="font-medium text-slate-300">Forza In.c</span>
-          </p>
-        </div>
+ <!-- ============ 8. FOOTER ============ -->
+ <footer class="bg-navy-dark text-slate-300">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+ <div class="flex flex-col items-center gap-8 text-center sm:flex-row sm:justify-between sm:text-left">
+ <div>
+ <div class="flex items-center justify-center gap-2 sm:justify-start">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-7 w-7" />
+ <span class="text-base font-bold text-white">Distribution Life</span>
+ </div>
+ <p class="mt-2 max-w-sm text-sm text-slate-400">
+ Professional distributor management software <br>
+ Built for the back office. 
+ </p>
+ <p class="mt-1 text-xs text-slate-500">
+ A product of <span class="font-medium text-slate-300">Forza Inc.</span>
+ </p>
+ </div>
 
-        <div class="flex flex-col items-center gap-3 sm:items-end">
-          <a id="footer-demo-mailto" href="mailto:i240824@isb.nu.edu.pk?subject=Demo%20Request&amp;body=Hi%20Forza%20Inc%20team%2C%0A%0AI%27d%20like%20to%20request%20a%20demo%20of%20Distribution%20Life.%0A%0AName%3A%20%0ACompany%3A%20%0APhone%3A%20%0A" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-hover transition-colors">
-            Request a Demo
-          </a>
-          <a id="footer-contact-email" href="mailto:i240824@isb.nu.edu.pk" class="text-sm text-slate-400 hover:text-white transition-colors">i240824@isb.nu.edu.pk</a>
-        </div>
-      </div>
+ <div class="flex flex-col items-center gap-3 sm:items-end">
+ <a id="footer-demo-mailto" href="mailto:i240824@isb.nu.edu.pk?subject=Demo%20Request&amp;body=Hi%20Forza%20Inc%20team%2C%0A%0AI%27d%20like%20to%20request%20a%20demo%20of%20Distribution%20Life.%0A%0AName%3A%20%0ACompany%3A%20%0APhone%3A%20%0A" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-hover transition-colors">
+ Request a Demo
+ </a>
+ <a id="footer-contact-email" href="mailto:i240824@isb.nu.edu.pk" class="text-sm text-slate-400 hover:text-white transition-colors">i240824@isb.nu.edu.pk</a>
+ </div>
+ </div>
 
-      <div class="mt-10 flex flex-col items-center gap-4 border-t border-white/10 pt-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
-        <p>&copy; 2026 Forza Inc. All rights reserved.</p>
-        <div class="flex gap-6">
-          <a href="#" class="hover:text-white transition-colors">Privacy</a>
-          <a href="mailto:i240824@isb.nu.edu.pk" class="hover:text-white transition-colors">Contact</a>
-        </div>
-      </div>
-      <p class="mt-6 text-center text-xs text-slate-500 sm:text-left">
-        Distribution Life is a product of Forza Inc. and is not affiliated with or endorsed by any beverage or FMCG manufacturer.
-      </p>
-    </div>
-  </footer>
+ <div class="mt-10 flex flex-col items-center gap-4 border-t border-white/10 pt-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
+ <p>&copy; 2026 Forza Inc. All rights reserved.</p>
+ <div class="flex gap-6">
+ <a href="#" class="hover:text-white transition-colors">Privacy</a>
+ <a href="mailto:i240824@isb.nu.edu.pk" class="hover:text-white transition-colors">Contact</a>
+ </div>
+ </div>
+ <p class="mt-6 text-center text-xs text-slate-500 sm:text-left">
+ Distribution Life is a product of Forza Inc. and is not affiliated with or endorsed by any beverage or FMCG manufacturer.
+ </p>
+ </div>
+ </footer>
 
-  <script src="js/main.js" defer></script>
+ <script src="js/main.js" defer></script>
 </body>
 </html>
