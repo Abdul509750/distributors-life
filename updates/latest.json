@@ -4,7 +4,7 @@
   "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
   "fileName": "DistributionLife.exe",
   "sha256": "",
-  "releaseNotes": "Test, ignore this file its just a testing trigger.",
+  "releaseNotes": "Added the auto updates feature and other many features in app.",
   "mandatory": false,
   "minSupportedVersion": "1.0.0"
 }
