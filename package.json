@@ -1,0 +1,7 @@
+{
+  "name": "distributors-life",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8"
+  }
+}

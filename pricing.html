@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title data-i18n="pricing.meta.title">Pricing</title>
+ <meta name="description" data-i18n="pricing.meta.description" content="Simple pricing for distribution operations. Professional and Enterprise plans for collections, expenses, drivers, treasury, and reporting." />
+ <link rel="icon" type="image/png" href="assets/images/HomeIcon.png" />
+ <link rel="apple-touch-icon" href="assets/images/HomeIcon.png" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ fontFamily: {
+ sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+ urdu: ['"Noto Nastaliq Urdu"', 'Inter', 'system-ui', 'sans-serif'],
+ },
+ colors: {
+ navy: { DEFAULT: '#1A1A1A', light: '#2E2E2E', dark: '#0D0D0D' },
+ accent: { DEFAULT: '#C4161C', hover: '#A31217' },
+ },
+ },
+ },
+ };
+ </script>
+ <link rel="stylesheet" href="css/styles.css?v=35" />
+</head>
+
+<body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
+
+ <div id="page-loader" class="page-loader" aria-hidden="true">
+ <img src="assets/images/HomeIcon.png" alt="" class="page-loader__logo" width="48" height="48" />
+ <div class="page-loader__bar"><span></span></div>
+ </div>
+
+ <header id="site-header" class="site-header sticky top-0 z-50">
+ <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 gap-3" aria-label="Main navigation">
+ <a href="index.html" class="flex items-center gap-2.5 group">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8 transition-transform duration-300 group-hover:scale-105" />
+ <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
+ </a>
+ <div class="hidden md:flex items-center gap-5 lg:gap-7">
+ <a href="faq/index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" aria-current="page" class="nav-link text-sm font-medium text-navy transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
+ <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button>
+ </div>
+ <a href="contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+ <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+ <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ </button>
+ </nav>
+ <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-4 pt-2">
+ <a href="faq/index.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-navy bg-slate-50 transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.download">Download</a>
+ <div class="mt-2 flex items-center gap-1 rounded-lg border border-slate-200 p-0.5 text-xs font-semibold" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button>
+ </div>
+ <a href="contact.html" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ </header>
+
+ <main class="flex-1">
+
+ <!-- Hero -->
+ <section class="pricing-hero" aria-labelledby="pricing-hero-heading">
+ <div class="pricing-hero__mesh" aria-hidden="true">
+ <span class="pricing-hero__blob pricing-hero__blob--1"></span>
+ <span class="pricing-hero__blob pricing-hero__blob--2"></span>
+ </div>
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-24 relative">
+ <div data-reveal class="max-w-3xl mx-auto text-center">
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="pricing.hero.label">Pricing</p>
+ <h1 id="pricing-hero-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="pricing.hero.title">Simple Pricing for Distribution Operations</h1>
+ <p class="saas-lead mt-5 text-lg sm:text-xl" data-i18n="pricing.hero.body">
+ Choose the plan that fits your organization. Every plan includes the core Distribution Life platform for collections, expenses, drivers, treasury management, and reporting.
+ </p>
+ <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+ <a href="contact.html#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="pricing.hero.ctaDemo">Book a Demo</a>
+ <a href="contact.html" class="btn-outline-pill inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold" data-i18n="pricing.hero.ctaContact">Contact Sales</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Included in every plan -->
+ <section class="pricing-section pricing-section--soft" aria-labelledby="pricing-included-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-2xl mx-auto">
+ <h2 id="pricing-included-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.included.title">Included in Every Plan</h2>
+ <p class="mt-3 text-base text-slate-600 leading-relaxed" data-i18n="pricing.included.body">Every Distribution Life subscription includes access to the complete platform with ongoing updates and cloud hosting.</p>
+ </div>
+ <ul class="pricing-included-grid" data-stagger="90">
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item1">Collection Management</span></li>
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item2">Driver Tracking</span></li>
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item3">Expense Monitoring</span></li>
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item4">Treasury Visibility</span></li>
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item5">Business Reporting</span></li>
+ <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item6">Secure Cloud Access</span></li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- Pricing cards -->
+ <section class="pricing-section" aria-labelledby="pricing-plans-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-2xl mx-auto mb-12">
+ <h2 id="pricing-plans-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.plans.title">Choose Your Plan</h2>
+ </div>
+ <div class="pricing-cards" data-stagger="120">
+ <article data-reveal class="pricing-card pricing-card--featured">
+ <span class="pricing-card__badge" data-i18n="pricing.pro.badge">Most Popular</span>
+ <h3 class="pricing-card__name" data-i18n="pricing.pro.name">Professional</h3>
+ <p class="pricing-card__price"><span data-i18n="pricing.pro.price">Starting from PKR 17,000/month</span></p>
+ <p class="pricing-card__desc" data-i18n="pricing.pro.desc">Everything you need to manage collections, expenses, drivers, and treasury operations.</p>
+ <ul class="pricing-card__features">
+ <li data-i18n="pricing.pro.f1">Collection Tracking</li>
+ <li data-i18n="pricing.pro.f2">Driver Management</li>
+ <li data-i18n="pricing.pro.f3">Expense Recording</li>
+ <li data-i18n="pricing.pro.f4">Treasury Monitoring</li>
+ <li data-i18n="pricing.pro.f5">Daily Reports</li>
+ <li data-i18n="pricing.pro.f6">Monthly Reports</li>
+ <li data-i18n="pricing.pro.f7">Cloud Hosting</li>
+ <li data-i18n="pricing.pro.f8">Automatic Updates</li>
+ <li data-i18n="pricing.pro.f9">Technical Support</li>
+ </ul>
+ <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta" data-i18n="pricing.pro.cta">Book a Demo</a>
+ </article>
+ <article data-reveal class="pricing-card">
+ <h3 class="pricing-card__name" data-i18n="pricing.ent.name">Enterprise</h3>
+ <p class="pricing-card__price"><span data-i18n="pricing.ent.price">Custom Pricing</span></p>
+ <p class="pricing-card__desc" data-i18n="pricing.ent.desc">For organizations requiring custom workflows, dedicated support, and tailored reporting.</p>
+ <ul class="pricing-card__features">
+ <li data-i18n="pricing.ent.f1">Everything in Professional</li>
+ <li data-i18n="pricing.ent.f2">Personalized Onboarding</li>
+ <li data-i18n="pricing.ent.f3">Priority Support</li>
+ <li data-i18n="pricing.ent.f4">Custom Reports</li>
+ <li data-i18n="pricing.ent.f5">Custom Workflows</li>
+ <li data-i18n="pricing.ent.f6">Dedicated Account Assistance</li>
+ <li data-i18n="pricing.ent.f7">Priority Feature Requests</li>
+ </ul>
+ <a href="contact.html" class="btn-outline-pill pricing-card__cta" data-i18n="pricing.ent.cta">Contact Sales</a>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <!-- Comparison table -->
+ <section class="pricing-section pricing-section--soft" aria-labelledby="pricing-compare-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-2xl mx-auto mb-10">
+ <h2 id="pricing-compare-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.compare.title">Compare Plans</h2>
+ </div>
+ <div data-reveal class="pricing-table-wrap">
+ <table class="pricing-table">
+ <caption class="sr-only" data-i18n="pricing.compare.caption">Feature comparison between Professional and Enterprise plans</caption>
+ <thead>
+ <tr>
+ <th scope="col" data-i18n="pricing.compare.feature">Feature</th>
+ <th scope="col" data-i18n="pricing.pro.name">Professional</th>
+ <th scope="col" data-i18n="pricing.ent.name">Enterprise</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><th scope="row" data-i18n="pricing.compare.r1">Collection Tracking</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r2">Driver Management</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r3">Expense Monitoring</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r4">Treasury Visibility</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r5">Business Reporting</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r6">Cloud Hosting</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r7">Automatic Updates</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r8">Technical Support</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r9">Personalized Onboarding</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r10">Priority Support</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r11">Custom Reports</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r12">Custom Workflows</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </section>
+
+ <!-- ROI -->
+ <section class="pricing-section" aria-labelledby="pricing-roi-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-3xl mx-auto mb-10">
+ <h2 id="pricing-roi-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.roi.title">One Missed Collection Can Cost More Than The Software</h2>
+ </div>
+ <div class="pricing-roi-grid" data-stagger="100">
+ <div data-reveal class="pricing-roi-card pricing-roi-card--before">
+ <h3 class="pricing-roi-card__heading" data-i18n="pricing.roi.beforeTitle">Before Distribution Life</h3>
+ <ul class="pricing-roi-card__list">
+ <li data-i18n="pricing.roi.before1">Spreadsheet-based tracking</li>
+ <li data-i18n="pricing.roi.before2">Manual reconciliation</li>
+ <li data-i18n="pricing.roi.before3">Time-consuming reporting</li>
+ <li data-i18n="pricing.roi.before4">Limited visibility</li>
+ <li data-i18n="pricing.roi.before5">Driver accountability challenges</li>
+ </ul>
+ </div>
+ <div data-reveal class="pricing-roi-card pricing-roi-card--after">
+ <h3 class="pricing-roi-card__heading" data-i18n="pricing.roi.afterTitle">After Distribution Life</h3>
+ <ul class="pricing-roi-card__list">
+ <li data-i18n="pricing.roi.after1">Centralized operations</li>
+ <li data-i18n="pricing.roi.after2">Real-time tracking</li>
+ <li data-i18n="pricing.roi.after3">Faster reconciliation</li>
+ <li data-i18n="pricing.roi.after4">Better financial visibility</li>
+ <li data-i18n="pricing.roi.after5">Accurate reporting</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- FAQ -->
+ <section class="pricing-section pricing-section--soft" aria-labelledby="pricing-faq-heading">
+ <div class="max-w-3xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center mb-10">
+ <h2 id="pricing-faq-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.faq.title">Pricing FAQs</h2>
+ </div>
+ <div data-reveal class="faq-panel divide-y divide-slate-200/80">
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="pricing.faq.q1">Is there a setup fee?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer"><div class="faq-answer__inner"><p class="text-sm leading-relaxed text-slate-600" data-i18n="pricing.faq.a1">No hidden setup fees. Contact us to discuss onboarding requirements.</p></div></div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="pricing.faq.q2">Is training included?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer"><div class="faq-answer__inner"><p class="text-sm leading-relaxed text-slate-600" data-i18n="pricing.faq.a2">Yes. We provide onboarding guidance and training.</p></div></div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="pricing.faq.q3">Can I upgrade later?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer"><div class="faq-answer__inner"><p class="text-sm leading-relaxed text-slate-600" data-i18n="pricing.faq.a3">Absolutely. Plans can be adjusted as your business grows.</p></div></div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="pricing.faq.q4">Do you offer custom features?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer"><div class="faq-answer__inner"><p class="text-sm leading-relaxed text-slate-600" data-i18n="pricing.faq.a4">Enterprise customers can request tailored workflows and reports.</p></div></div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="pricing.faq.q5">Is support included?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer"><div class="faq-answer__inner"><p class="text-sm leading-relaxed text-slate-600" data-i18n="pricing.faq.a5">Yes. All plans include support.</p></div></div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Final CTA -->
+ <section class="sales-cta-band scroll-mt-24" aria-labelledby="pricing-cta-heading">
+ <div class="sales-cta-band__mesh" aria-hidden="true">
+ <span class="sales-cta-band__orb sales-cta-band__orb--1"></span>
+ <span class="sales-cta-band__orb sales-cta-band__orb--2"></span>
+ </div>
+ <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center relative">
+ <div data-reveal>
+ <h2 id="pricing-cta-heading" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight" data-i18n="pricing.cta.title">Ready to Modernize Your Distribution Operations?</h2>
+ <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto" data-i18n="pricing.cta.body">Book a personalized demo and discover how Distribution Life can streamline collections, expenses, drivers, and treasury management.</p>
+ <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+ <a href="contact.html#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="pricing.cta.demo">Book a Demo</a>
+ <a href="contact.html" class="btn-ghost inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full" data-i18n="pricing.cta.contact">Contact Sales</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ </main>
+
+ <footer class="site-footer text-slate-400">
+ <div class="footer-glow" aria-hidden="true"></div>
+ <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm">
+ <p data-i18n="footer.rights">&copy; 2026 Forza Inc. All rights reserved.</p>
+ <div class="flex flex-wrap gap-4">
+ <a href="index.html" class="hover:text-white transition-colors" data-i18n="sales.footerHome">Home</a>
+ <a href="pricing.html" class="hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="faq/index.html" class="hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="contact.html" class="hover:text-white transition-colors" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ </div>
+ </footer>
+
+ <script src="js/i18n.js?v=34" defer></script>
+ <script src="js/main.js?v=33" defer></script>
+</body>
+</html>

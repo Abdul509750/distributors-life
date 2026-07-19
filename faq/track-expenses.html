@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title data-i18n="faqPage.q04">FAQ</title>
+ <link rel="icon" type="image/png" href="../assets/images/HomeIcon.png" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif'],urdu:['"Noto Nastaliq Urdu"','Inter','system-ui','sans-serif']},colors:{navy:{DEFAULT:'#1A1A1A'},accent:{DEFAULT:'#C4161C',hover:'#A31217'}}}}};</script>
+ <link rel="stylesheet" href="../css/styles.css?v=34" />
+</head>
+<body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
+ <div id="page-loader" class="page-loader" aria-hidden="true"><img src="../assets/images/HomeIcon.png" alt="" class="page-loader__logo" width="48" height="48" /><div class="page-loader__bar"><span></span></div></div>
+ <header id="site-header" class="site-header sticky top-0 z-50">
+ <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 gap-3" aria-label="Main navigation">
+ <a href="../index.html" class="flex items-center gap-2 group"><img src="../assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" /><span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span></a>
+ <div class="flex items-center gap-3 sm:gap-4">
+ <a href="index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a> <a href="../pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a> <a href="../download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
+ <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language"><button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500" aria-pressed="true">EN</button><button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button></div>
+ <a href="../contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover whitespace-nowrap" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ </nav>
+ </header>
+ <main class="flex-1 section-panel section-alt">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+ <a href="index.html" class="faq-back inline-flex items-center gap-1 text-sm font-medium text-slate-500 hover:text-navy transition-colors" data-i18n="faqPage.backToFaq">&larr; All questions</a>
+ <div class="faq-layout__grid mt-8">
+ <aside id="faq-sidebar" class="faq-sidebar" data-faq-current="track-expenses"></aside>
+ <article class="faq-article saas-card p-8 sm:p-10" data-reveal>
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="faqPage.label">FAQ</p>
+ <h1 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="faqPage.q04">Question</h1>
+ <div class="faq-article__body mt-6 text-base leading-relaxed text-slate-600" data-i18n="faqPage.a04">Answer</div>
+ <nav class="faq-pager mt-10" id="faq-pager" data-faq-current="track-expenses"></nav>
+ </article>
+ </div>
+ </div>
+ </main>
+ <footer class="site-footer text-slate-400"><div class="footer-glow" aria-hidden="true"></div><div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm"><p data-i18n="footer.rights">&copy; 2026 Forza Inc. All rights reserved.</p><a href="index.html" class="hover:text-white transition-colors" data-i18n="faqPage.backToFaq">All questions</a></div></footer>
+ <script src="../js/i18n.js?v=34" defer></script>
+ <script src="../js/faq-data.js?v=34" defer></script>
+ <script src="../js/faq-nav.js?v=34" defer></script>
+ <script src="../js/main.js?v=34" defer></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title data-i18n="sales.meta.title">Contact Sales</title>
+ <meta name="description" data-i18n="sales.meta.description" content="Schedule a personalized demo or contact sales. See how Distribution Life helps distributors manage collections, expenses, drivers, and treasury." />
+ <link rel="icon" type="image/png" href="assets/images/HomeIcon.png" />
+ <link rel="apple-touch-icon" href="assets/images/HomeIcon.png" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ fontFamily: {
+ sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+ urdu: ['"Noto Nastaliq Urdu"', 'Inter', 'system-ui', 'sans-serif'],
+ },
+ colors: {
+ navy: { DEFAULT: '#1A1A1A', light: '#2E2E2E', dark: '#0D0D0D' },
+ accent: { DEFAULT: '#C4161C', hover: '#A31217' },
+ },
+ },
+ },
+ };
+ </script>
+ <link rel="stylesheet" href="css/styles.css?v=32" />
+</head>
+
+<body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
+
+ <div id="page-loader" class="page-loader" aria-hidden="true">
+ <img src="assets/images/HomeIcon.png" alt="" class="page-loader__logo" width="48" height="48" />
+ <div class="page-loader__bar"><span></span></div>
+ </div>
+
+ <header id="site-header" class="site-header sticky top-0 z-50">
+ <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 gap-3" aria-label="Main navigation">
+ <a href="index.html" class="flex items-center gap-2.5 group">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8 transition-transform duration-300 group-hover:scale-105" />
+ <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
+ </a>
+ <div class="hidden md:flex items-center gap-5 lg:gap-7">
+ <a href="faq/index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
+ <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">اردو</button>
+ </div>
+ <a href="contact.html" aria-current="page" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+ <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+ <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ </button>
+ </nav>
+ <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-4 pt-2">
+ <a href="faq/index.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.download">Download</a>
+ <div class="mt-2 flex items-center gap-1 rounded-lg border border-slate-200 p-0.5 text-xs font-semibold" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">اردو</button>
+ </div>
+ <a href="contact.html" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ </header>
+
+ <main class="flex-1">
+
+ <!-- Hero -->
+ <section class="sales-hero" aria-labelledby="sales-hero-heading">
+ <div class="sales-hero__mesh" aria-hidden="true">
+ <span class="sales-hero__blob sales-hero__blob--1"></span>
+ <span class="sales-hero__blob sales-hero__blob--2"></span>
+ </div>
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-24 relative">
+ <div data-reveal class="max-w-3xl">
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="sales.hero.label">Contact sales</p>
+ <h1 id="sales-hero-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="sales.hero.title">Let's Simplify Your Distribution Operations</h1>
+ <p class="saas-lead mt-5 text-lg sm:text-xl" data-i18n="sales.hero.body">
+ See how Distribution Life helps distributors manage collections, expenses, drivers, and treasury operations in one centralized platform.
+ </p>
+ <div class="mt-8 flex flex-col sm:flex-row gap-3">
+ <a href="#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="sales.hero.ctaDemo">Schedule a Demo</a>
+ <a href="#contact-form" class="btn-outline-pill inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold" data-i18n="sales.hero.ctaContact">Contact Sales</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Why contact us -->
+ <section class="sales-section sales-section--soft" aria-labelledby="sales-why-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-2xl mx-auto">
+ <h2 id="sales-why-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="sales.why.title">Why reach out to our team</h2>
+ </div>
+ <ul class="sales-why-grid" data-stagger="100">
+ <li data-reveal class="sales-why-card">
+ <span class="sales-why-card__icon sales-why-card__icon--coral" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+ </span>
+ <h3 class="sales-why-card__title" data-i18n="sales.why.card1Title">Personalized Demo</h3>
+ <p class="sales-why-card__body" data-i18n="sales.why.card1Body">See how Distribution Life fits your specific business workflow.</p>
+ </li>
+ <li data-reveal class="sales-why-card">
+ <span class="sales-why-card__icon sales-why-card__icon--sky" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+ </span>
+ <h3 class="sales-why-card__title" data-i18n="sales.why.card2Title">Easy Onboarding</h3>
+ <p class="sales-why-card__body" data-i18n="sales.why.card2Body">We help import your existing records and get your team up and running quickly.</p>
+ </li>
+ <li data-reveal class="sales-why-card">
+ <span class="sales-why-card__icon sales-why-card__icon--mint" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+ </span>
+ <h3 class="sales-why-card__title" data-i18n="sales.why.card3Title">Dedicated Support</h3>
+ <p class="sales-why-card__body" data-i18n="sales.why.card3Body">Get direct assistance during setup and daily operations.</p>
+ </li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- Contact form -->
+ <section id="contact-form" class="sales-section scroll-mt-24" aria-labelledby="sales-form-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div class="sales-form-layout">
+ <div id="sales-form-wrap" class="sales-form-panel">
+ <h2 id="sales-form-heading" class="sales-form-panel__title" data-i18n="sales.form.title">Request a Personalized Demo</h2>
+ <form id="sales-demo-form" class="sales-form" novalidate>
+ <input type="text" name="website" class="sales-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+ <p id="sales-form-error" class="sales-form-error" role="alert" hidden></p>
+ <div class="sales-form__grid">
+ <div class="sales-field">
+ <label for="sales-name" class="sales-label"><span data-i18n="sales.form.fullName">Full Name</span> <span class="sales-required" aria-hidden="true">*</span></label>
+ <input id="sales-name" name="fullName" type="text" class="sales-input" autocomplete="name" required data-i18n-attr="placeholder:sales.form.fullNamePh" placeholder="Jawad Khan" />
+ <p class="sales-field-error" id="sales-name-error" role="alert" hidden></p>
+ </div>
+ <div class="sales-field">
+ <label for="sales-company" class="sales-label"><span data-i18n="sales.form.company">Company Name</span> <span class="sales-required" aria-hidden="true">*</span></label>
+ <input id="sales-company" name="company" type="text" class="sales-input" autocomplete="organization" required data-i18n-attr="placeholder:sales.form.companyPh" placeholder="Your distributor office" />
+ <p class="sales-field-error" id="sales-company-error" role="alert" hidden></p>
+ </div>
+ <div class="sales-field">
+ <label for="sales-email" class="sales-label" data-i18n="sales.form.email">Email Address</label>
+ <input id="sales-email" name="email" type="email" class="sales-input" autocomplete="email" inputmode="email" data-i18n-attr="placeholder:sales.form.emailPh" placeholder="you@company.com" />
+ <p class="sales-field-error" id="sales-email-error" role="alert" hidden></p>
+ </div>
+ <div class="sales-field">
+ <label for="sales-phone" class="sales-label"><span data-i18n="sales.form.phone">Phone Number</span> <span class="sales-required" aria-hidden="true">*</span></label>
+ <input id="sales-phone" name="phone" type="tel" class="sales-input" autocomplete="tel" inputmode="tel" required data-i18n-attr="placeholder:sales.form.phonePh" placeholder="+92 300 0000000" />
+ <p class="sales-field-error" id="sales-phone-error" role="alert" hidden></p>
+ </div>
+ <div class="sales-field">
+ <label for="sales-industry" class="sales-label" data-i18n="sales.form.industry">Industry</label>
+ <select id="sales-industry" name="industry" class="sales-select">
+ <option value="Beverage Distribution" data-i18n="sales.industry.beverage">Beverage Distribution</option>
+ <option value="FMCG Distribution" data-i18n="sales.industry.fmcg">FMCG Distribution</option>
+ <option value="Wholesale Distribution" data-i18n="sales.industry.wholesale">Wholesale Distribution</option>
+ <option value="Logistics" data-i18n="sales.industry.logistics">Logistics</option>
+ <option value="Other" data-i18n="sales.industry.other">Other</option>
+ </select>
+ </div>
+ <div class="sales-field">
+ <label for="sales-size" class="sales-label" data-i18n="sales.form.companySize">Company Size</label>
+ <select id="sales-size" name="companySize" class="sales-select">
+ <option value="1–10 Employees" data-i18n="sales.size.1_10">1–10 Employees</option>
+ <option value="11–50 Employees" data-i18n="sales.size.11_50">11–50 Employees</option>
+ <option value="51–200 Employees" data-i18n="sales.size.51_200">51–200 Employees</option>
+ <option value="200+ Employees" data-i18n="sales.size.200plus">200+ Employees</option>
+ </select>
+ </div>
+ <div class="sales-field">
+ <label for="sales-drivers" class="sales-label" data-i18n="sales.form.drivers">Number of Drivers</label>
+ <select id="sales-drivers" name="drivers" class="sales-select">
+ <option value="1–5" data-i18n="sales.drivers.1_5">1–5</option>
+ <option value="6–20" data-i18n="sales.drivers.6_20">6–20</option>
+ <option value="21–50" data-i18n="sales.drivers.21_50">21–50</option>
+ <option value="50+" data-i18n="sales.drivers.50plus">50+</option>
+ </select>
+ </div>
+ <div class="sales-field">
+ <label for="sales-process" class="sales-label" data-i18n="sales.form.process">Current Process</label>
+ <select id="sales-process" name="currentProcess" class="sales-select">
+ <option value="Paper Records" data-i18n="sales.process.paper">Paper Records</option>
+ <option value="Excel Sheets" data-i18n="sales.process.excel">Excel Sheets</option>
+ <option value="Existing Software" data-i18n="sales.process.software">Existing Software</option>
+ <option value="Combination of Methods" data-i18n="sales.process.combo">Combination of Methods</option>
+ </select>
+ </div>
+ <div class="sales-field sales-field--full">
+ <label for="sales-challenge" class="sales-label" data-i18n="sales.form.challenge">Biggest Challenge</label>
+ <select id="sales-challenge" name="challenge" class="sales-select">
+ <option value="Collection Tracking" data-i18n="sales.challenge.collection">Collection Tracking</option>
+ <option value="Expense Management" data-i18n="sales.challenge.expense">Expense Management</option>
+ <option value="Treasury Monitoring" data-i18n="sales.challenge.treasury">Treasury Monitoring</option>
+ <option value="Reporting" data-i18n="sales.challenge.reporting">Reporting</option>
+ <option value="Driver Accountability" data-i18n="sales.challenge.driver">Driver Accountability</option>
+ <option value="Other" data-i18n="sales.challenge.other">Other</option>
+ </select>
+ </div>
+ <div class="sales-field sales-field--full">
+ <label for="sales-message" class="sales-label" data-i18n="sales.form.message">Tell us about your operations and requirements.</label>
+ <textarea id="sales-message" name="message" class="sales-textarea" rows="4" data-i18n-attr="placeholder:sales.form.messagePh" placeholder="Routes, staff size, current tools, timeline…"></textarea>
+ </div>
+ </div>
+ <button type="submit" class="btn-primary btn-pill sales-form__submit" data-i18n="sales.form.submit">Request Demo</button>
+ </form>
+ </div>
+
+ <div id="sales-form-success" class="sales-form-success" hidden tabindex="-1">
+ <div class="sales-form-success__icon" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+ </div>
+ <h2 class="sales-form-success__title" data-i18n="sales.form.successTitle">Thank you — we received your request</h2>
+ <p class="sales-form-success__body" data-i18n="sales.form.successBody">Our sales team will review your details and respond within one business day.</p>
+ <div class="sales-form-success__actions">
+ <a
+ id="sales-success-email-btn"
+ href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=i240824@isb.nu.edu.pk&amp;su=Demo%20Request%20%E2%80%94%20Distribution%20Life"
+ target="_blank"
+ rel="noopener noreferrer"
+ class="btn-outline-pill inline-flex justify-center"
+ data-i18n="sales.form.successEmail"
+ >Email us directly</a>
+ <button type="button" id="sales-copy-email-btn" class="btn-outline-pill inline-flex justify-center" data-i18n="cta.copyEmail">Copy Email</button>
+ </div>
+ <p id="sales-copy-feedback" class="sales-form-success__feedback" hidden aria-live="polite"></p>
+ </div>
+
+ <aside data-reveal class="sales-sidebar">
+ <h2 class="sales-sidebar__title" data-i18n="sales.sidebar.title">Why Companies Choose Distribution Life</h2>
+ <p class="sales-sidebar__desc" data-i18n="sales.sidebar.body">Built specifically for distributors who need accurate financial visibility and operational control.</p>
+ <ul class="sales-sidebar__list">
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item1">Collection Management</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item2">Driver Tracking</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item3">Expense Monitoring</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item4">Treasury Visibility</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item5">Business Reporting</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item6">Cloud Access</span></li>
+ <li><span class="sales-sidebar__check" aria-hidden="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span data-i18n="sales.sidebar.item7">Dedicated Support</span></li>
+ </ul>
+ </aside>
+ </div>
+ </div>
+ </section>
+
+ <!-- What happens next -->
+ <section class="sales-section sales-section--soft" aria-labelledby="sales-next-heading">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center max-w-2xl mx-auto">
+ <h2 id="sales-next-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="sales.next.title">What Happens After You Submit?</h2>
+ </div>
+ <ol class="sales-timeline" data-stagger="120">
+ <li data-reveal class="sales-timeline__step">
+ <span class="sales-timeline__num" aria-hidden="true">1</span>
+ <p class="sales-timeline__text" data-i18n="sales.next.step1">We review your requirements.</p>
+ </li>
+ <li data-reveal class="sales-timeline__step">
+ <span class="sales-timeline__num" aria-hidden="true">2</span>
+ <p class="sales-timeline__text" data-i18n="sales.next.step2">We schedule a discovery call.</p>
+ </li>
+ <li data-reveal class="sales-timeline__step">
+ <span class="sales-timeline__num" aria-hidden="true">3</span>
+ <p class="sales-timeline__text" data-i18n="sales.next.step3">We provide a personalized demonstration.</p>
+ </li>
+ <li data-reveal class="sales-timeline__step">
+ <span class="sales-timeline__num" aria-hidden="true">4</span>
+ <p class="sales-timeline__text" data-i18n="sales.next.step4">We discuss onboarding and implementation.</p>
+ </li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- Mini FAQ -->
+ <section class="sales-section" aria-labelledby="sales-faq-heading">
+ <div class="max-w-3xl mx-auto px-4 sm:px-6">
+ <div data-reveal class="section-intro text-center mb-10">
+ <h2 id="sales-faq-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="sales.faq.title">Frequently Asked Questions</h2>
+ </div>
+ <div data-reveal class="faq-panel divide-y divide-slate-200/80">
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="sales.faq.q1">How quickly can we get started?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer">
+ <div class="faq-answer__inner">
+ <p class="text-sm leading-relaxed text-slate-600" data-i18n="sales.faq.a1">Most teams can be onboarded within a few days depending on requirements.</p>
+ </div>
+ </div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="sales.faq.q2">Do you provide training?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer">
+ <div class="faq-answer__inner">
+ <p class="text-sm leading-relaxed text-slate-600" data-i18n="sales.faq.a2">Yes, onboarding and training are included.</p>
+ </div>
+ </div>
+ </div>
+ <div class="faq-item">
+ <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+ <span class="font-semibold text-navy" data-i18n="sales.faq.q3">Can you support custom requirements?</span>
+ <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+ </button>
+ <div class="faq-answer">
+ <div class="faq-answer__inner">
+ <p class="text-sm leading-relaxed text-slate-600" data-i18n="sales.faq.a3">Yes, we can discuss custom workflows and reporting needs.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Final CTA -->
+ <section class="sales-cta-band scroll-mt-24" aria-labelledby="sales-cta-heading">
+ <div class="sales-cta-band__mesh" aria-hidden="true">
+ <span class="sales-cta-band__orb sales-cta-band__orb--1"></span>
+ <span class="sales-cta-band__orb sales-cta-band__orb--2"></span>
+ </div>
+ <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center relative">
+ <div data-reveal>
+ <h2 id="sales-cta-heading" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight" data-i18n="sales.cta.title">Ready to Modernize Your Distribution Operations?</h2>
+ <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto" data-i18n="sales.cta.body">Book a personalized demo and discover how Distribution Life can streamline collections, expenses, drivers, and treasury management.</p>
+ <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+ <a href="#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="sales.cta.demo">Schedule Demo</a>
+ <a href="mailto:i240824@isb.nu.edu.pk?subject=Contact%20Sales" class="btn-ghost inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full" data-i18n="sales.cta.contact">Contact Sales</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ </main>
+
+ <footer class="site-footer text-slate-400">
+ <div class="footer-glow" aria-hidden="true"></div>
+ <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm">
+ <p data-i18n="footer.rights">&copy; 2026 Forza Inc. All rights reserved.</p>
+ <div class="flex flex-wrap gap-4">
+ <a href="index.html" class="hover:text-white transition-colors" data-i18n="sales.footerHome">Home</a>
+ <a href="faq/index.html" class="hover:text-white transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="download.html" class="hover:text-white transition-colors" data-i18n="nav.download">Download</a>
+ </div>
+ </div>
+ </footer>
+
+<script src="js/supabase-config.js?v=32" defer></script>
+<script src="js/i18n.js?v=34" defer></script>
+<script src="js/main.js?v=32" defer></script>
+</body>
+</html>

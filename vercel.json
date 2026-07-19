@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/submit-demo.js": {
+      "maxDuration": 10
+    }
+  }
+}

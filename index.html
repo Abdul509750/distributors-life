@@ -30,7 +30,7 @@
  };
  </script>
 
- <link rel="stylesheet" href="css/styles.css?v=19" />
+ <link rel="stylesheet" href="css/styles.css?v=32" />
 </head>
 
 <body class="font-sans text-slate-700 antialiased">
@@ -52,12 +52,14 @@
  </a>
 
  <div class="hidden md:flex items-center gap-5 lg:gap-7">
+ <a href="faq/index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a>
  <a href="download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
  <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language">
  <button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
  <button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">اردو</button>
  </div>
- <a href="#footer-sales" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">
+ <a href="contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">
  Contact sales
  </a>
  </div>
@@ -69,12 +71,14 @@
  </nav>
 
  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-4 pt-2">
+ <a href="faq/index.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.pricing">Pricing</a>
  <a href="download.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.download">Download</a>
  <div class="mt-2 flex items-center gap-1 rounded-lg border border-slate-200 p-0.5 text-xs font-semibold" role="group" aria-label="Language">
  <button type="button" data-set-lang="en" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
  <button type="button" data-set-lang="ur" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">اردو</button>
  </div>
- <a href="#footer-sales" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ <a href="contact.html" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
  </div>
  </header>
 
@@ -99,7 +103,7 @@
  It records route collections, bank deposits, treasury activity, and driver balances in one place.
  </p>
  <div data-reveal style="--d: 280ms" class="hero-cta-row mt-10">
- <a href="#features" class="btn-primary btn-pill inline-flex items-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="hero.ctaFeatures">
+ <a href="#impact" class="btn-primary btn-pill inline-flex items-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="hero.ctaFeatures">
  View modules
  </a>
  <a href="download.html" class="btn-ghost" data-i18n="nav.download">
@@ -110,7 +114,7 @@
  Windows desktop software · Used at distributor offices daily
  </p>
 
- <div data-reveal="scale" style="--d: 420ms" class="product-showcase">
+ <div data-reveal="zoom" style="--d: 420ms" class="product-showcase">
  <div class="product-showcase__glow" aria-hidden="true"></div>
  <div class="product-mockup">
  <div class="browser-chrome">
@@ -154,26 +158,97 @@
  </div>
  </section>
 
- <!-- Stats row -->
- <section class="stats-row" aria-label="Product highlights">
+ <!-- Results & Impact -->
+ <section id="impact" class="impact-section" aria-labelledby="impact-heading">
  <div class="max-w-6xl mx-auto px-4 sm:px-6">
- <ul class="stats-grid">
- <li data-reveal style="--d: 0ms" class="stat-card stat-card--coral">
- <span class="stat-card__value">3</span>
- <span class="stat-card__label" data-i18n="stats.steps">Steps to close the day</span>
+ <div data-reveal class="impact-intro section-intro">
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="impact.label">Results &amp; impact</p>
+ <h2 id="impact-heading" class="saas-headline mt-4" data-i18n="impact.title">Built for Modern Distribution Operations</h2>
+ <p class="saas-lead mt-4" data-i18n="impact.body">
+ A centralized platform that helps distributors track collections, expenses, deposits, and treasury activities with greater accuracy and visibility.
+ </p>
+ </div>
+
+ <ul class="impact-stats" data-stagger="110" aria-label="Operational metrics">
+ <li data-reveal class="impact-stat impact-stat--coral">
+ <span class="impact-stat__icon" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+ </span>
+ <span class="impact-stat__value" data-count="100" data-count-suffix="+">0</span>
+ <span class="impact-stat__label" data-i18n="impact.stat1">Collections Processed</span>
  </li>
- <li data-reveal style="--d: 80ms" class="stat-card stat-card--sky">
- <span class="stat-card__value">4</span>
- <span class="stat-card__label" data-i18n="stats.modules">Core office modules</span>
+ <li data-reveal class="impact-stat impact-stat--sky">
+ <span class="impact-stat__icon" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+ </span>
+ <span class="impact-stat__value" data-i18n="impact.stat2Value">Dozen+</span>
+ <span class="impact-stat__label" data-i18n="impact.stat2">Drivers Managed</span>
  </li>
- <li data-reveal style="--d: 160ms" class="stat-card stat-card--mint">
- <span class="stat-card__value" data-i18n="stats.multiValue">Multi</span>
- <span class="stat-card__label" data-i18n="stats.multi">Staff accounts with roles</span>
+ <li data-reveal class="impact-stat impact-stat--mint">
+ <span class="impact-stat__icon" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+ </span>
+ <span class="impact-stat__value" data-count="70" data-count-prefix="PKR " data-count-suffix="M+">0</span>
+ <span class="impact-stat__label" data-i18n="impact.stat3">Funds Tracked</span>
  </li>
- <li data-reveal style="--d: 240ms" class="stat-card stat-card--sand">
- <span class="stat-card__value" data-i18n="stats.reportsValue">Daily</span>
- <span class="stat-card__label" data-i18n="stats.reports">Printable end-of-day reports</span>
+ <li data-reveal class="impact-stat impact-stat--sand">
+ <span class="impact-stat__icon" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+ </span>
+ <span class="impact-stat__value" data-i18n="impact.stat4Value">24/7</span>
+ <span class="impact-stat__label" data-i18n="impact.stat4">Cloud Access</span>
  </li>
+ </ul>
+
+ <div class="impact-roi">
+ <div data-reveal class="impact-roi__copy">
+ <h3 class="impact-roi__title" data-i18n="impact.roiTitle">Why Distributors Choose Distribution Life</h3>
+ <p class="impact-roi__desc" data-i18n="impact.roiBody">
+ Distribution Life replaces spreadsheets, manual calculations, and paper-based processes with a centralized system designed specifically for distribution operations.
+ </p>
+ <div class="impact-compare">
+ <div class="impact-compare__col impact-compare__col--before">
+ <h4 class="impact-compare__heading" data-i18n="impact.beforeTitle">Before Distribution Life</h4>
+ <ul class="impact-compare__list">
+ <li data-i18n="impact.before1">Manual reconciliation</li>
+ <li data-i18n="impact.before2">Scattered Excel sheets</li>
+ <li data-i18n="impact.before3">Limited visibility into collections</li>
+ <li data-i18n="impact.before4">Difficult expense tracking</li>
+ <li data-i18n="impact.before5">Time-consuming reporting</li>
+ </ul>
+ </div>
+ <div class="impact-compare__col impact-compare__col--after">
+ <h4 class="impact-compare__heading" data-i18n="impact.afterTitle">After Distribution Life</h4>
+ <ul class="impact-compare__list">
+ <li data-i18n="impact.after1">Centralized collection management</li>
+ <li data-i18n="impact.after2">Real-time operational visibility</li>
+ <li data-i18n="impact.after3">Accurate expense tracking</li>
+ <li data-i18n="impact.after4">Faster treasury reconciliation</li>
+ <li data-i18n="impact.after5">Instant business reports</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <div data-reveal="zoom" style="--d: 120ms" class="impact-roi__visual">
+ <div class="impact-roi__glow" aria-hidden="true"></div>
+ <div class="impact-roi__mockup">
+ <div class="browser-chrome">
+ <div class="browser-chrome__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+ <div class="browser-chrome__url">Distribution Life — Daily Overview</div>
+ </div>
+ <picture>
+ <source srcset="assets/images/screenshot-dashboard.webp" type="image/webp" />
+ <img src="assets/images/screenshot-dashboard-opt.png" alt="" width="1200" height="632" loading="lazy" decoding="async" />
+ </picture>
+ </div>
+ </div>
+ </div>
+
+ <ul class="impact-trust" data-stagger="90" aria-label="Capabilities">
+ <li data-reveal class="impact-trust__item"><span class="impact-trust__check" aria-hidden="true">✓</span><span data-i18n="impact.trust1">Collection Tracking</span></li>
+ <li data-reveal class="impact-trust__item"><span class="impact-trust__check" aria-hidden="true">✓</span><span data-i18n="impact.trust2">Expense Management</span></li>
+ <li data-reveal class="impact-trust__item"><span class="impact-trust__check" aria-hidden="true">✓</span><span data-i18n="impact.trust3">Treasury Monitoring</span></li>
+ <li data-reveal class="impact-trust__item"><span class="impact-trust__check" aria-hidden="true">✓</span><span data-i18n="impact.trust4">Real-Time Reporting</span></li>
  </ul>
  </div>
  </section>
@@ -238,7 +313,7 @@
  </p>
  </div>
 
- <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+ <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" data-stagger="130">
  <div data-reveal="scale" style="--d: 0ms" class="feature-card feature-card--coral">
  <div class="feature-card__icon text-accent">
  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
@@ -293,7 +368,7 @@
  </p>
  </div>
 
- <ol class="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
+ <ol class="mt-14 grid gap-6 md:grid-cols-3 md:gap-8" data-stagger="156">
  <li data-reveal style="--d: 0ms" class="process-step">
  <div class="step-card text-center md:text-left">
  <span class="step-num mx-auto md:mx-0 flex h-11 w-11 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">1</span>
@@ -509,7 +584,7 @@
 
  <div class="product-tour__viewport">
  <div id="tour-panel-login" class="product-tour__panel is-active" role="tabpanel" aria-labelledby="tour-tab-login" data-tour-panel="login">
- <div class="screen-frame product-tour__frame">
+ <div class="screen-frame product-tour__frame reveal-media">
  <picture>
  <source srcset="assets/images/screenshot-login.webp" type="image/webp" />
  <img src="assets/images/screenshot-login-opt.png" alt="Distribution Life login screen" class="w-full" width="1200" height="631" loading="lazy" decoding="async" />
@@ -521,7 +596,7 @@
  </div>
 
  <div id="tour-panel-dashboard" class="product-tour__panel" role="tabpanel" aria-labelledby="tour-tab-dashboard" data-tour-panel="dashboard" hidden>
- <div class="screen-frame product-tour__frame">
+ <div class="screen-frame product-tour__frame reveal-media">
  <picture>
  <source srcset="assets/images/screenshot-dashboard.webp" type="image/webp" />
  <img src="assets/images/screenshot-dashboard-opt.png" alt="Distribution Life daily overview dashboard" class="w-full" width="1200" height="632" loading="lazy" decoding="async" />
@@ -533,7 +608,7 @@
  </div>
 
  <div id="tour-panel-guide" class="product-tour__panel" role="tabpanel" aria-labelledby="tour-tab-guide" data-tour-panel="guide" hidden>
- <div class="screen-frame product-tour__frame">
+ <div class="screen-frame product-tour__frame reveal-media">
  <picture>
  <source srcset="assets/images/screenshot-user-guide.webp" type="image/webp" />
  <img src="assets/images/screenshot-user-guide-opt.png" alt="Distribution Life user guide" class="w-full" width="1200" height="631" loading="lazy" decoding="async" />
@@ -553,22 +628,22 @@
  <div class="max-w-6xl mx-auto px-4 sm:px-6">
  <div data-reveal class="success-section__head">
  <h2 class="saas-headline" data-i18n="success.title">Our customers achieve more</h2>
- <a href="#footer-sales" class="btn-outline-pill" data-i18n="nav.sales">
+ <a href="contact.html" class="btn-outline-pill" data-i18n="nav.sales">
  Contact sales <span aria-hidden="true">→</span>
  </a>
  </div>
 
- <div class="success-grid mt-10 lg:mt-12">
+ <div class="success-grid mt-10 lg:mt-12" data-stagger="156">
  <article data-reveal style="--d: 0ms" class="success-card success-card--metric">
  <span class="success-card__tag" data-i18n="success.caseTag">Distribution</span>
  <div class="success-card__metric-body">
  <div class="success-card__copy">
- <p class="success-card__stat">3</p>
+ <p class="success-card__stat" data-count="3">0</p>
  <p class="success-card__stat-label" data-i18n="success.caseStat">Steps to close the day</p>
  <a href="#how-it-works" class="success-card__link" data-i18n="success.caseLink">See the daily process →</a>
  </div>
  <div class="success-card__visual">
- <div class="success-card__visual-frame">
+ <div class="success-card__visual-frame reveal-media">
  <picture>
  <source srcset="assets/images/screenshot-dashboard.webp" type="image/webp" />
  <img src="assets/images/screenshot-dashboard-opt.png" alt="" width="1200" height="632" loading="lazy" decoding="async" />
@@ -588,7 +663,7 @@
  <p class="success-card__author" data-i18n="success.author">— Office manager, Shafqat Traders</p>
  </div>
  <div class="success-card__visual success-card__visual--tall">
- <div class="success-card__visual-frame">
+ <div class="success-card__visual-frame reveal-media">
  <picture>
  <source srcset="assets/images/screenshot-login.webp" type="image/webp" />
  <img src="assets/images/screenshot-login-opt.png" alt="" width="1200" height="631" loading="lazy" decoding="async" />
@@ -601,55 +676,12 @@
  </div>
  </section>
 
- <!-- FAQ -->
- <section id="faq" class="section-panel section-alt">
- <div class="max-w-3xl mx-auto px-4 sm:px-6">
- <div data-reveal class="text-center">
- <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="faq.label">FAQ</p>
- <h2 class="saas-headline mt-4" data-i18n="faq.title">Common questions</h2>
- </div>
-
- <div data-reveal style="--d: 120ms" class="faq-panel mt-10 divide-y divide-slate-200/80 rounded-2xl border border-slate-200/80 overflow-hidden">
-
- <div class="faq-item">
- <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
- <span class="text-base font-medium text-navy" data-i18n="faq.q1">How do updates work?</span>
- <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
- </button>
- <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
- <div class="pb-5"><span data-i18n="faq.a1">New versions are posted on the Download page. Install the latest build when the office is ready to update.</span></div>
- </div>
- </div>
-
- <div class="faq-item">
- <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
- <span class="text-base font-medium text-navy" data-i18n="faq.q2">Can multiple staff members use it at the same time?</span>
- <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
- </button>
- <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
- <div class="pb-5"><span data-i18n="faq.a2">Yes. Cashiers, encoders, and managers can have separate accounts with different permissions. Each entry is linked to a named user.</span></div>
- </div>
- </div>
-
- <div class="faq-item">
- <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
- <span class="text-base font-medium text-navy" data-i18n="faq.q3">What reports can I print?</span>
- <svg class="faq-chevron h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
- </button>
- <div class="faq-answer px-6 text-sm leading-relaxed text-slate-600">
- <div class="pb-5"><span data-i18n="faq.a3">Daily collection summaries, bank deposit reports, treasury and expense ledgers, and per-driver accountability sheets.</span></div>
- </div>
- </div>
- </div>
- </div>
- </section>
-
  <!-- Scroll showcase — parallax orbit cards + ledger statue -->
  <section id="scroll-showcase" class="scroll-showcase" aria-label="Product overview animation">
  <div class="scroll-showcase__intro max-w-6xl mx-auto px-4 sm:px-6 text-center">
- <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="showcase.label">One system</p>
- <h2 class="saas-headline mt-4" data-i18n="showcase.title">Built for distributor office work</h2>
- <p class="saas-lead mt-4 mx-auto max-w-2xl" data-i18n="showcase.body">Collections, deposits, treasury, and driver balances — connected as you scroll.</p>
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="showcase.label" data-reveal style="--d: 0ms">One system</p>
+ <h2 class="saas-headline mt-4" data-i18n="showcase.title" data-reveal style="--d: 80ms">Built for distributor office work</h2>
+ <p class="saas-lead mt-4 mx-auto max-w-2xl" data-i18n="showcase.body" data-reveal style="--d: 160ms">Collections, deposits, treasury, and driver balances — connected as you scroll.</p>
  </div>
 
  <div class="scroll-showcase__scene">
@@ -736,7 +768,7 @@
  <div data-reveal class="partner-showcase__inner">
  <p class="partner-showcase__label" data-i18n="partner.label">Trusted in daily operations</p>
 
- <picture class="partner-showcase__logo-wrap">
+ <picture class="partner-showcase__logo-wrap" data-reveal="zoom" style="--d: 120ms">
  <source srcset="assets/images/coca-cola-logo.webp" type="image/webp" />
  <img src="assets/images/coca-cola-logo-opt.png" alt="The Coca-Cola Company" class="partner-showcase__logo" width="500" height="500" loading="lazy" decoding="async" />
  </picture>
@@ -767,7 +799,7 @@
  <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight" data-i18n="footer.ctaTitle">Ready to see Distribution Life in your office?</h2>
  <p class="mt-3 text-slate-400 max-w-lg mx-auto" data-i18n="footer.ctaBody">Contact sales or download the latest Windows installer.</p>
  <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
- <a id="footer-sales" href="mailto:i240824@isb.nu.edu.pk?subject=Contact%20Sales&amp;body=Hi%2C%0A%0AI%20would%20like%20to%20speak%20with%20sales%20about%20Distribution%20Life.%0A%0AName%3A%20%0ACompany%3A%20%0APhone%3A%20%0A" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover scroll-mt-24" data-i18n="nav.sales">
+ <a id="footer-sales" href="contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover scroll-mt-24" data-i18n="nav.sales">
  Contact sales
  </a>
  <a href="download.html" class="btn-ghost border-white/20 text-white hover:border-white/40" data-i18n="nav.download">Download</a>
@@ -805,6 +837,8 @@
  <div class="relative mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
  <p data-i18n="footer.rights">&copy; 2026 Forza Inc. All rights reserved.</p>
  <div class="flex gap-6">
+ <a href="faq/index.html" class="hover:text-white transition-colors" data-i18n="faq.label">FAQ</a>
+ <a href="pricing.html" class="hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
  <a href="#" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy</a>
  <a href="#contact" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
  </div>
@@ -815,7 +849,7 @@
  </div>
  </footer>
 
-<script src="js/i18n.js?v=19" defer></script>
-<script src="js/main.js?v=19" defer></script>
+<script src="js/i18n.js?v=34" defer></script>
+<script src="js/main.js?v=37" defer></script>
 </body>
 </html>
