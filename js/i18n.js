@@ -266,6 +266,16 @@
       'footer.contact': 'Contact',
       'footer.disclaimer':
         'Distribution Life is a product of Forza Inc. and is not affiliated with or endorsed by any beverage or FMCG manufacturer.',
+      'privacy.meta.title': 'Privacy',
+      'privacy.meta.description':
+        'Privacy Policy for Distribution Life. How we collect, use, store, and protect your information.',
+      'privacy.label': 'Legal',
+      'privacy.title': 'Privacy Policy',
+      'privacy.subtitle':
+        'Your privacy and data security are important to us. This policy explains how Distribution Life collects, uses, stores, and protects your information.',
+      'privacy.lastUpdatedLabel': 'Last updated:',
+      'privacy.tocLabel': 'On this page',
+      'privacy.contactBtn': 'Contact Support',
       'dl.back': '← Back to website',
       'dl.label': 'Download',
       'dl.title': 'Distribution Life for Windows',
@@ -734,6 +744,16 @@
       'footer.contact': 'رابطہ',
       'footer.disclaimer':
         'ڈسٹری بیوشن لائف فورزا انک کی پروڈکٹ ہے اور کسی مشروب یا ایف ایم سی جی مینوفیکچرر سے وابستہ یا منظور شدہ نہیں۔',
+      'privacy.meta.title': 'پرائیویسی',
+      'privacy.meta.description':
+        'ڈسٹری بیوشن لائف کی پرائیویسی پالیسی۔ ہم آپ کی معلومات کیسے جمع، استعمال، محفوظ اور تحفظ کرتے ہیں۔',
+      'privacy.label': 'قانونی',
+      'privacy.title': 'پرائیویسی پالیسی',
+      'privacy.subtitle':
+        'آپ کی پرائیویسی اور ڈیٹا سیکیورٹی ہمارے لیے اہم ہے۔ یہ پالیسی بتاتی ہے کہ ڈسٹری بیوشن لائف آپ کی معلومات کیسے جمع، استعمال، محفوظ اور تحفظ کرتا ہے۔',
+      'privacy.lastUpdatedLabel': 'آخری اپ ڈیٹ:',
+      'privacy.tocLabel': 'اس صفحے پر',
+      'privacy.contactBtn': 'سپورٹ سے رابطہ کریں',
       'dl.back': '← ویب سائٹ پر واپس',
       'dl.label': 'ڈاؤن لوڈ',
       'dl.title': 'ڈسٹری بیوشن لائف برائے ونڈوز',

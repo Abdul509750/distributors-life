@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title data-i18n="privacy.meta.title">Privacy</title>
+ <meta name="description" data-i18n="privacy.meta.description" content="Privacy Policy for Distribution Life. How we collect, use, store, and protect your information." />
+ <link rel="icon" type="image/png" href="assets/images/HomeIcon.png" />
+ <link rel="apple-touch-icon" href="assets/images/HomeIcon.png" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ fontFamily: {
+ sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+ urdu: ['"Noto Nastaliq Urdu"', 'Inter', 'system-ui', 'sans-serif'],
+ },
+ colors: {
+ navy: { DEFAULT: '#1A1A1A', light: '#2E2E2E', dark: '#0D0D0D' },
+ accent: { DEFAULT: '#C4161C', hover: '#A31217' },
+ },
+ },
+ },
+ };
+ </script>
+ <link rel="stylesheet" href="css/styles.css?v=36" />
+</head>
+
+<body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
+
+ <div id="page-loader" class="page-loader" aria-hidden="true">
+ <img src="assets/images/HomeIcon.png" alt="" class="page-loader__logo" width="48" height="48" />
+ <div class="page-loader__bar"><span></span></div>
+ </div>
+
+ <header id="site-header" class="site-header sticky top-0 z-50">
+ <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 gap-3" aria-label="Main navigation">
+ <a href="index.html" class="flex items-center gap-2.5 group">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8 transition-transform duration-300 group-hover:scale-105" />
+ <span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span>
+ </a>
+ <div class="hidden md:flex items-center gap-5 lg:gap-7">
+ <a href="faq/index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
+ <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button>
+ </div>
+ <a href="contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+ <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+ <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+ </button>
+ </nav>
+ <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-4 pt-2">
+ <a href="faq/index.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="pricing.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="download.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.download">Download</a>
+ <div class="mt-2 flex items-center gap-1 rounded-lg border border-slate-200 p-0.5 text-xs font-semibold" role="group" aria-label="Language">
+ <button type="button" data-set-lang="en" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button>
+ <button type="button" data-set-lang="ur" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button>
+ </div>
+ <a href="contact.html" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
+ </header>
+
+ <main class="flex-1">
+
+ <section class="privacy-hero" aria-labelledby="privacy-heading">
+ <div class="privacy-hero__mesh" aria-hidden="true">
+ <span class="privacy-hero__blob privacy-hero__blob--1"></span>
+ <span class="privacy-hero__blob privacy-hero__blob--2"></span>
+ </div>
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 relative">
+ <div data-reveal class="max-w-3xl">
+ <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="privacy.label">Legal</p>
+ <h1 id="privacy-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="privacy.title">Privacy Policy</h1>
+ <p class="saas-lead mt-5 text-lg sm:text-xl" data-i18n="privacy.subtitle">
+ Your privacy and data security are important to us. This policy explains how Distribution Life collects, uses, stores, and protects your information.
+ </p>
+ <p class="mt-4 text-sm text-slate-500">
+ <span data-i18n="privacy.lastUpdatedLabel">Last updated:</span>
+ <time datetime="2026-07-19">19 July 2026</time>
+ </p>
+ </div>
+ </div>
+ </section>
+
+ <div class="privacy-layout section-panel section-alt">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+ <div class="privacy-layout__grid">
+
+ <nav class="privacy-toc" aria-label="Privacy policy sections" data-reveal>
+ <p class="privacy-toc__label" data-i18n="privacy.tocLabel">On this page</p>
+ <ol class="privacy-toc__list">
+ <li><a href="#privacy-collect" class="privacy-toc__link">Information We Collect</a></li>
+ <li><a href="#privacy-use" class="privacy-toc__link">How We Use Your Information</a></li>
+ <li><a href="#privacy-business" class="privacy-toc__link">Your Business Data</a></li>
+ <li><a href="#privacy-security" class="privacy-toc__link">How We Protect Your Data</a></li>
+ <li><a href="#privacy-sharing" class="privacy-toc__link">Do We Share Your Information?</a></li>
+ <li><a href="#privacy-cookies" class="privacy-toc__link">Cookies and Analytics</a></li>
+ <li><a href="#privacy-retention" class="privacy-toc__link">Data Retention</a></li>
+ <li><a href="#privacy-rights" class="privacy-toc__link">Your Rights</a></li>
+ <li><a href="#privacy-contact" class="privacy-toc__link">Questions About Privacy?</a></li>
+ </ol>
+ </nav>
+
+ <div class="privacy-content">
+
+ <section id="privacy-collect" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">Information We Collect</h2>
+ <p class="privacy-section__lead">Distribution Life may collect the following types of information when you use our website, contact our team, or use our platform.</p>
+ <ul class="privacy-card-grid" data-stagger="70">
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">1</span><span>Name</span></li>
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">2</span><span>Email address</span></li>
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">3</span><span>Phone number</span></li>
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">4</span><span>Company information</span></li>
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">5</span><span>Contact form submissions</span></li>
+ <li data-reveal class="privacy-card"><span class="privacy-card__icon" aria-hidden="true">6</span><span>Usage information</span></li>
+ <li data-reveal class="privacy-card privacy-card--wide"><span class="privacy-card__icon" aria-hidden="true">7</span><span>Technical information such as browser type, device type, and general usage diagnostics</span></li>
+ </ul>
+ </section>
+
+ <section id="privacy-use" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">How We Use Your Information</h2>
+ <p class="privacy-section__lead">We use collected information for legitimate business purposes related to providing and improving Distribution Life.</p>
+ <ul class="privacy-list">
+ <li>Provide and improve the platform</li>
+ <li>Respond to inquiries and demo requests</li>
+ <li>Schedule product demonstrations</li>
+ <li>Deliver customer support</li>
+ <li>Improve user experience and product quality</li>
+ <li>Maintain platform security and prevent misuse</li>
+ </ul>
+ </section>
+
+ <section id="privacy-business" class="privacy-section privacy-section--trust" data-reveal>
+ <div class="privacy-trust">
+ <span class="privacy-trust__badge" aria-hidden="true">
+ <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+ </span>
+ <h2 class="privacy-section__title">Your Business Data</h2>
+ <p class="privacy-section__lead">Your operational data belongs to you. Distribution Life is built to protect distributor office information with clear ownership and limited use.</p>
+ <ul class="privacy-list privacy-list--trust">
+ <li><strong>You retain ownership</strong> of your business data, including collections, expenses, drivers, and reporting records.</li>
+ <li><strong>We do not sell</strong> customer data to third parties.</li>
+ <li><strong>Data is used only</strong> to provide platform functionality, support services, and agreed operational features.</li>
+ <li><strong>Customer information remains confidential</strong> and is handled according to this policy and applicable agreements.</li>
+ </ul>
+ </div>
+ </section>
+
+ <section id="privacy-security" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">How We Protect Your Data</h2>
+ <p class="privacy-section__lead">We apply reasonable technical and organizational measures designed to help safeguard information. No system can guarantee absolute security, but we work continuously to reduce risk.</p>
+ <ul class="privacy-list">
+ <li>Secure cloud infrastructure for platform services</li>
+ <li>Encrypted connections (HTTPS) for website and data transmission</li>
+ <li>Access controls to limit who can view or manage systems</li>
+ <li>Security monitoring to help detect unusual activity</li>
+ <li>Regular software updates and maintenance</li>
+ </ul>
+ </section>
+
+ <section id="privacy-sharing" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">Do We Share Your Information?</h2>
+ <p class="privacy-section__lead">Distribution Life does not sell, rent, or trade customer information.</p>
+ <p class="privacy-section__text">Information may be shared only in limited circumstances, such as when:</p>
+ <ul class="privacy-list">
+ <li>Required by applicable law, regulation, or legal process</li>
+ <li>Necessary to provide services you request (for example, hosting or infrastructure providers under confidentiality obligations)</li>
+ <li>Required to protect the security, integrity, or rights of the platform, our customers, or others</li>
+ </ul>
+ </section>
+
+ <section id="privacy-cookies" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">Cookies and Analytics</h2>
+ <p class="privacy-section__text">Our website may use cookies and analytics tools to improve functionality, measure performance, and understand how visitors use our pages.</p>
+ <p class="privacy-section__text">You can control or disable cookies through your browser settings. Some features may work differently if cookies are turned off.</p>
+ </section>
+
+ <section id="privacy-retention" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">Data Retention</h2>
+ <p class="privacy-section__text">We retain information only for as long as necessary to provide services, fulfill legitimate business purposes, comply with legal obligations, resolve disputes, and support customer operations.</p>
+ <p class="privacy-section__text">When information is no longer required, we take reasonable steps to delete or anonymize it in accordance with our retention practices.</p>
+ </section>
+
+ <section id="privacy-rights" class="privacy-section" data-reveal>
+ <h2 class="privacy-section__title">Your Rights</h2>
+ <p class="privacy-section__lead">Depending on your location and applicable law, you may have rights regarding your personal information, including the ability to request:</p>
+ <ul class="privacy-list">
+ <li>Access to information we hold about you</li>
+ <li>Correction of inaccurate or incomplete information</li>
+ <li>Deletion of certain information, where applicable</li>
+ <li>Information about how your data is stored and used</li>
+ </ul>
+ <p class="privacy-section__text">To exercise these rights, contact us using the details below.</p>
+ </section>
+
+ <section id="privacy-contact" class="privacy-section privacy-section--contact" data-reveal>
+ <div class="privacy-contact-card">
+ <h2 class="privacy-section__title">Questions About Privacy?</h2>
+ <p class="privacy-section__lead">If you have questions about this Privacy Policy or how we handle information, our team is here to help.</p>
+ <p class="privacy-contact-card__email">
+ <span class="privacy-contact-card__label">Email</span>
+ <a href="mailto:info@forzasolutions.site">info@forzasolutions.site</a>
+ </p>
+ <a href="contact.html" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="privacy.contactBtn">Contact Support</a>
+ </div>
+ </section>
+
+ </div>
+ </div>
+ </div>
+ </div>
+
+ </main>
+
+ <!-- Footer -->
+ <footer id="contact" class="site-footer text-slate-300">
+ <div class="footer-cta-band py-14">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+ <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight" data-i18n="footer.ctaTitle">Ready to see Distribution Life in your office?</h2>
+ <p class="mt-3 text-slate-400 max-w-lg mx-auto" data-i18n="footer.ctaBody">Contact sales or download the latest Windows installer.</p>
+ <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+ <a id="footer-sales" href="contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover scroll-mt-24" data-i18n="nav.sales">
+ Contact sales
+ </a>
+ <a href="download.html" class="btn-ghost border-white/20 text-white hover:border-white/40" data-i18n="nav.download">Download</a>
+ </div>
+ </div>
+ </div>
+ <div class="footer-glow" aria-hidden="true"></div>
+ <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-12">
+ <div class="text-center sm:text-left">
+ <div class="flex items-center justify-center gap-2 sm:justify-start">
+ <img src="assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-7 w-7" />
+ <span class="text-base font-semibold text-white">Distribution Life</span>
+ </div>
+ <p class="mt-2 max-w-sm mx-auto sm:mx-0 text-sm text-slate-400" data-i18n="footer.tagline">
+ Distributor office software for collections, deposits, and treasury.
+ </p>
+ <p class="mt-3 text-sm text-slate-400">
+ <span data-i18n="footer.whatsappLabel">Feel free to WA us at:</span>
+ <a href="https://wa.me/923187252818" class="ml-1 text-slate-300 hover:text-white transition-colors underline underline-offset-2 whitespace-nowrap" target="_blank" rel="noopener noreferrer">+92 318 7252818</a>
+ </p>
+ </div>
+
+ <div class="relative mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
+ <p data-i18n="footer.rights">&copy; 2026 Forza Inc. All rights reserved.</p>
+ <div class="flex gap-6">
+ <a href="faq/index.html" class="hover:text-white transition-colors" data-i18n="faq.label">FAQ</a>
+ <a href="pricing.html" class="hover:text-white transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="privacy.html" aria-current="page" class="hover:text-white transition-colors text-white" data-i18n="footer.privacy">Privacy</a>
+ <a href="#contact" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
+ </div>
+ </div>
+ <p class="relative mt-4 text-center text-xs text-slate-500 sm:text-left" data-i18n="footer.disclaimer">
+ Distribution Life is a product of Forza Inc. and is not affiliated with or endorsed by any beverage or FMCG manufacturer.
+ </p>
+ </div>
+ </footer>
+
+<script src="js/i18n.js?v=36" defer></script>
+<script src="js/main.js?v=39" defer></script>
+</body>
+</html>

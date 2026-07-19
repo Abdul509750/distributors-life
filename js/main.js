@@ -941,6 +941,38 @@
     });
   }
 
+  function initPrivacyToc() {
+    const tocLinks = document.querySelectorAll('.privacy-toc__link');
+    const sections = document.querySelectorAll('.privacy-section[id]');
+    if (!tocLinks.length || !sections.length) return;
+
+    const setActive = (id) => {
+      tocLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          if (visible[0]) setActive(visible[0].target.id);
+        },
+        { rootMargin: '-35% 0px -55% 0px', threshold: [0, 0.25, 0.5, 1] }
+      );
+      sections.forEach((section) => observer.observe(section));
+    }
+
+    tocLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        const id = link.getAttribute('href')?.slice(1);
+        if (id) setActive(id);
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     markMobileExperience();
     initPageLoader();
@@ -956,5 +988,6 @@
     initScrollShowcase();
     initSalesForm();
     initFaq();
+    initPrivacyToc();
   });
 })();
