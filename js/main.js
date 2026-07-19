@@ -4,7 +4,8 @@
 (function () {
   'use strict';
 
-  const CONTACT_EMAIL = 'i240824@isb.nu.edu.pk';
+  const WHATSAPP_NUMBER = '923187252818';
+  const WHATSAPP_DISPLAY = '+92 318 7252818';
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const isMobile = !isFinePointer;
@@ -44,31 +45,6 @@
     } else {
       window.addEventListener('load', () => window.setTimeout(finish, 350), { once: true });
     }
-  }
-
-  function initCopyEmail() {
-    const copyEmailBtn = document.getElementById('copy-email-btn');
-    const copyEmailFeedback = document.getElementById('copy-email-feedback');
-    if (!copyEmailBtn) return;
-
-    copyEmailBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(CONTACT_EMAIL);
-        if (copyEmailFeedback) copyEmailFeedback.textContent = tr('cta.copied', 'Email copied to clipboard.');
-      } catch {
-        window.prompt(tr('cta.copyPrompt', 'Copy this email address:'), CONTACT_EMAIL);
-        if (copyEmailFeedback) {
-          copyEmailFeedback.textContent = tr(
-            'cta.copyFallback',
-            'Email shown — copy it from the dialog if needed.'
-          );
-        }
-      }
-      if (copyEmailFeedback) {
-        copyEmailFeedback.classList.remove('hidden');
-        window.setTimeout(() => copyEmailFeedback.classList.add('hidden'), 3000);
-      }
-    });
   }
 
   function initMobileNav() {
@@ -882,7 +858,7 @@
         if (formError) {
           formError.textContent = tr(
             'sales.form.errorSubmit',
-            'Something went wrong. Please try again or email us directly.'
+            'Something went wrong. Please try again or message us on WhatsApp.'
           );
           formError.hidden = false;
         }
@@ -895,22 +871,22 @@
       }
     });
 
-    const copyBtn = document.getElementById('sales-copy-email-btn');
+    const copyBtn = document.getElementById('sales-copy-phone-btn');
     const copyFeedback = document.getElementById('sales-copy-feedback');
     if (copyBtn) {
       copyBtn.addEventListener('click', async () => {
         try {
-          await navigator.clipboard.writeText(CONTACT_EMAIL);
+          await navigator.clipboard.writeText(WHATSAPP_DISPLAY);
           if (copyFeedback) {
-            copyFeedback.textContent = tr('cta.copied', 'Email copied to clipboard.');
+            copyFeedback.textContent = tr('cta.phoneCopied', 'Number copied to clipboard.');
             copyFeedback.hidden = false;
           }
         } catch {
-          window.prompt(tr('cta.copyPrompt', 'Copy this email address:'), CONTACT_EMAIL);
+          window.prompt(tr('cta.copyPhonePrompt', 'Copy this phone number:'), WHATSAPP_DISPLAY);
           if (copyFeedback) {
             copyFeedback.textContent = tr(
               'cta.copyFallback',
-              'Email shown — copy it from the dialog if needed.'
+              'Number shown — copy it from the dialog if needed.'
             );
             copyFeedback.hidden = false;
           }
@@ -968,7 +944,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     markMobileExperience();
     initPageLoader();
-    initCopyEmail();
     initMobileNav();
     initScrollReveal();
     initStaggerGroups();
