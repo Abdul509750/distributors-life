@@ -14,15 +14,25 @@
 </head>
 <body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
  <div id="page-loader" class="page-loader" aria-hidden="true"><img src="../assets/images/HomeIcon.png" alt="" class="page-loader__logo" width="48" height="48" /><div class="page-loader__bar"><span></span></div></div>
- <header id="site-header" class="site-header sticky top-0 z-50">
+  <header id="site-header" class="site-header sticky top-0 z-50">
  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 gap-3" aria-label="Main navigation">
- <a href="../index.html" class="flex items-center gap-2 group"><img src="../assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8" /><span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span></a>
- <div class="flex items-center gap-3 sm:gap-4">
- <a href="index.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.faq">FAQ</a> <a href="../pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a> <a href="../download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
- <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language"><button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500" aria-pressed="true">EN</button><button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button></div>
- <a href="../contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover whitespace-nowrap" data-i18n="nav.sales">Contact sales</a>
+ <a href="../index.html" class="flex items-center gap-2.5 group"><img src="../assets/images/HomeIcon.png" alt="Distribution Life logo" class="h-8 w-8 transition-transform duration-300 group-hover:scale-105" /><span class="text-lg font-bold text-accent tracking-tight">Distribution Life</span></a>
+ <div class="hidden md:flex items-center gap-5 lg:gap-7">
+ <a href="index.html" aria-current="page" class="nav-link text-sm font-medium text-navy transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="../pricing.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="../download.html" class="nav-link text-sm font-medium text-slate-600 hover:text-navy transition-colors" data-i18n="nav.download">Download</a>
+ <div class="flex items-center gap-1 rounded-lg border border-slate-200/80 bg-white/60 p-0.5 text-xs font-semibold backdrop-blur-sm" role="group" aria-label="Language"><button type="button" data-set-lang="en" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button><button type="button" data-set-lang="ur" class="lang-btn rounded-md px-2.5 py-1.5 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button></div>
+ <a href="../contact.html" class="btn-primary btn-pill inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
  </div>
+ <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu"><svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
  </nav>
+ <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-4 pt-2">
+ <a href="index.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-navy bg-slate-50 transition-colors" data-i18n="nav.faq">FAQ</a>
+ <a href="../pricing.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.pricing">Pricing</a>
+ <a href="../download.html" class="block rounded-lg px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-i18n="nav.download">Download</a>
+ <div class="mt-2 flex items-center gap-1 rounded-lg border border-slate-200 p-0.5 text-xs font-semibold" role="group" aria-label="Language"><button type="button" data-set-lang="en" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="true">EN</button><button type="button" data-set-lang="ur" class="lang-btn flex-1 rounded-md px-2.5 py-2 text-slate-500 hover:text-navy transition-colors" aria-pressed="false">&#1575;&#1585;&#1583;&#1608;</button></div>
+ <a href="../contact.html" class="btn-primary btn-pill mt-2 block rounded-full bg-accent px-3 py-2.5 text-center text-base font-semibold text-white hover:bg-accent-hover" data-i18n="nav.sales">Contact sales</a>
+ </div>
  </header>
  <main class="flex-1 section-panel section-alt">
  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -42,6 +52,6 @@
  <script src="../js/i18n.js?v=34" defer></script>
  <script src="../js/faq-data.js?v=34" defer></script>
  <script src="../js/faq-nav.js?v=34" defer></script>
- <script src="../js/main.js?v=34" defer></script>
+ <script src="../js/main.js?v=37" defer></script>
 </body>
 </html>
