@@ -4,7 +4,7 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title data-i18n="pricing.meta.title">Pricing</title>
- <meta name="description" data-i18n="pricing.meta.description" content="Simple pricing for distribution operations. Professional and Enterprise plans for collections, expenses, drivers, treasury, and reporting." />
+ <meta name="description" data-i18n="pricing.meta.description" content="Simple pricing for distribution operations. Start with a free demo, then choose Professional or Enterprise for collections, expenses, drivers, treasury, and reporting." />
  <link rel="icon" type="image/png" href="assets/images/HomeIcon.png" />
  <link rel="apple-touch-icon" href="assets/images/HomeIcon.png" />
 
@@ -29,7 +29,7 @@
  },
  };
  </script>
- <link rel="stylesheet" href="css/styles.css?v=35" />
+ <link rel="stylesheet" href="css/styles.css?v=36" />
 </head>
 
 <body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
@@ -85,7 +85,7 @@
  <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="pricing.hero.label">Pricing</p>
  <h1 id="pricing-hero-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="pricing.hero.title">Simple Pricing for Distribution Operations</h1>
  <p class="saas-lead mt-5 text-lg sm:text-xl" data-i18n="pricing.hero.body">
- Choose the plan that fits your organization. Every plan includes the core Distribution Life platform for collections, expenses, drivers, treasury management, and reporting.
+ Start with a free demo, then choose the plan that fits your organization. Paid plans include the full Distribution Life platform for collections, expenses, drivers, treasury, and reporting.
  </p>
  <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
  <a href="contact.html#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="pricing.hero.ctaDemo">Book a Demo</a>
@@ -100,7 +100,7 @@
  <div class="max-w-6xl mx-auto px-4 sm:px-6">
  <div data-reveal class="section-intro text-center max-w-2xl mx-auto">
  <h2 id="pricing-included-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.included.title">Included in Every Plan</h2>
- <p class="mt-3 text-base text-slate-600 leading-relaxed" data-i18n="pricing.included.body">Every Distribution Life subscription includes access to the complete platform with ongoing updates and cloud hosting.</p>
+ <p class="mt-3 text-base text-slate-600 leading-relaxed" data-i18n="pricing.included.body">Every paid Distribution Life subscription includes access to the complete platform with ongoing updates and cloud hosting.</p>
  </div>
  <ul class="pricing-included-grid" data-stagger="90">
  <li data-reveal class="pricing-included-card"><span class="pricing-check" aria-hidden="true"></span><span data-i18n="pricing.included.item1">Collection Management</span></li>
@@ -120,11 +120,54 @@
  <h2 id="pricing-plans-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.plans.title">Choose Your Plan</h2>
  </div>
  <div class="pricing-cards" data-stagger="120">
+
+ <!-- Free / Demo -->
+ <article data-reveal class="pricing-card pricing-card--free">
+ <h3 class="pricing-card__name" data-i18n="pricing.free.name">Free</h3>
+ <p class="pricing-card__price">
+ <span class="pricing-card__amount" data-i18n="pricing.free.price">PKR 0</span>
+ <span class="pricing-card__price-note" data-i18n="pricing.free.priceNote">free demo</span>
+ </p>
+ <p class="pricing-card__seats" data-i18n="pricing.free.seats">See the product before you commit</p>
+ <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta pricing-card__cta--early" data-i18n="pricing.free.cta">Try free demo</a>
+ <div class="pricing-card__teaser pricing-card__teaser--locked" aria-hidden="false">
+ <span class="pricing-card__teaser-icon" aria-hidden="true">
+ <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
+ </span>
+ <div>
+ <p class="pricing-card__teaser-title" data-i18n="pricing.free.teaserTitle">Full platform</p>
+ <p class="pricing-card__teaser-body" data-i18n="pricing.free.teaserBody">Available from Professional</p>
+ </div>
+ </div>
+ <p class="pricing-card__includes" data-i18n="pricing.free.includes">Demo includes:</p>
+ <ul class="pricing-card__features">
+ <li data-i18n="pricing.free.f1">Guided product walkthrough</li>
+ <li data-i18n="pricing.free.f2">Sample collections &amp; reports</li>
+ <li data-i18n="pricing.free.f3">Live Q&amp;A with our team</li>
+ <li data-i18n="pricing.free.f4">No credit card required</li>
+ <li data-i18n="pricing.free.f5">No commitment</li>
+ </ul>
+ </article>
+
+ <!-- Professional -->
  <article data-reveal class="pricing-card pricing-card--featured">
  <span class="pricing-card__badge" data-i18n="pricing.pro.badge">Most Popular</span>
  <h3 class="pricing-card__name" data-i18n="pricing.pro.name">Professional</h3>
- <p class="pricing-card__price"><span data-i18n="pricing.pro.price">Starting from PKR 13,000/month</span></p>
- <p class="pricing-card__desc" data-i18n="pricing.pro.desc">Everything you need to manage collections, expenses, drivers, and treasury operations.</p>
+ <p class="pricing-card__price">
+ <span class="pricing-card__amount" data-i18n="pricing.pro.price">Starting from PKR 14,000/month</span>
+ </p>
+ <p class="pricing-card__seats" data-i18n="pricing.pro.desc">Everything you need to manage collections, expenses, drivers, and treasury operations.</p>
+ <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta pricing-card__cta--early" data-i18n="pricing.pro.cta">Book a Demo</a>
+ <div class="pricing-card__teaser pricing-card__teaser--pro">
+ <span class="pricing-card__teaser-icon" aria-hidden="true">
+ <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.9 7.2 18l.9-5.4L4.2 8.7l5.4-.8L12 3z"/></svg>
+ </span>
+ <div>
+ <p class="pricing-card__teaser-title" data-i18n="pricing.pro.teaserTitle">Complete operations suite</p>
+ <p class="pricing-card__teaser-body" data-i18n="pricing.pro.teaserBody">Collections, drivers, expenses, treasury &amp; reporting</p>
+ </div>
+ </div>
+ <p class="pricing-card__includes" data-i18n="pricing.pro.includes">Professional includes:</p>
  <ul class="pricing-card__features">
  <li data-i18n="pricing.pro.f1">Collection Tracking</li>
  <li data-i18n="pricing.pro.f2">Driver Management</li>
@@ -136,14 +179,27 @@
  <li data-i18n="pricing.pro.f8">Automatic Updates</li>
  <li data-i18n="pricing.pro.f9">Technical Support</li>
  </ul>
- <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta" data-i18n="pricing.pro.cta">Book a Demo</a>
  </article>
- <article data-reveal class="pricing-card">
+
+ <!-- Enterprise -->
+ <article data-reveal class="pricing-card pricing-card--enterprise">
  <h3 class="pricing-card__name" data-i18n="pricing.ent.name">Enterprise</h3>
- <p class="pricing-card__price"><span data-i18n="pricing.ent.price">Custom Pricing</span></p>
- <p class="pricing-card__desc" data-i18n="pricing.ent.desc">For organizations requiring custom workflows, dedicated support, and tailored reporting.</p>
+ <p class="pricing-card__price">
+ <span class="pricing-card__amount" data-i18n="pricing.ent.price">Custom Pricing</span>
+ </p>
+ <p class="pricing-card__seats" data-i18n="pricing.ent.desc">Fully customized to your business needs.</p>
+ <a href="contact.html" class="btn-outline-pill pricing-card__cta pricing-card__cta--early" data-i18n="pricing.ent.cta">Get a quote</a>
+ <div class="pricing-card__teaser pricing-card__teaser--ent">
+ <span class="pricing-card__teaser-icon" aria-hidden="true">
+ <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+ </span>
+ <div>
+ <p class="pricing-card__teaser-title" data-i18n="pricing.ent.teaserTitle">Enterprise support</p>
+ <p class="pricing-card__teaser-body" data-i18n="pricing.ent.teaserBody">Dedicated onboarding, priority help &amp; custom workflows</p>
+ </div>
+ </div>
+ <p class="pricing-card__includes" data-i18n="pricing.ent.includes">Includes Professional, plus:</p>
  <ul class="pricing-card__features">
- <li data-i18n="pricing.ent.f1">Everything in Professional</li>
  <li data-i18n="pricing.ent.f2">Personalized Onboarding</li>
  <li data-i18n="pricing.ent.f3">Priority Support</li>
  <li data-i18n="pricing.ent.f4">Custom Reports</li>
@@ -151,8 +207,8 @@
  <li data-i18n="pricing.ent.f6">Dedicated Account Assistance</li>
  <li data-i18n="pricing.ent.f7">Priority Feature Requests</li>
  </ul>
- <a href="contact.html" class="btn-outline-pill pricing-card__cta" data-i18n="pricing.ent.cta">Contact Sales</a>
  </article>
+
  </div>
  </div>
  </section>
@@ -165,27 +221,29 @@
  </div>
  <div data-reveal class="pricing-table-wrap">
  <table class="pricing-table">
- <caption class="sr-only" data-i18n="pricing.compare.caption">Feature comparison between Professional and Enterprise plans</caption>
+ <caption class="sr-only" data-i18n="pricing.compare.caption">Feature comparison between Free demo, Professional, and Enterprise plans</caption>
  <thead>
  <tr>
  <th scope="col" data-i18n="pricing.compare.feature">Feature</th>
+ <th scope="col" data-i18n="pricing.free.name">Free</th>
  <th scope="col" data-i18n="pricing.pro.name">Professional</th>
  <th scope="col" data-i18n="pricing.ent.name">Enterprise</th>
  </tr>
  </thead>
  <tbody>
- <tr><th scope="row" data-i18n="pricing.compare.r1">Collection Tracking</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r2">Driver Management</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r3">Expense Monitoring</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r4">Treasury Visibility</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r5">Business Reporting</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r6">Cloud Hosting</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r7">Automatic Updates</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r8">Technical Support</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r9">Personalized Onboarding</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r10">Priority Support</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r11">Custom Reports</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
- <tr><th scope="row" data-i18n="pricing.compare.r12">Custom Workflows</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r0">Guided product demo</th><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r1">Collection Tracking</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r2">Driver Management</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r3">Expense Monitoring</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r4">Treasury Visibility</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r5">Business Reporting</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r6">Cloud Hosting</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r7">Automatic Updates</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r8">Technical Support</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r9">Personalized Onboarding</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r10">Priority Support</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r11">Custom Reports</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
+ <tr><th scope="row" data-i18n="pricing.compare.r12">Custom Workflows</th><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__no" aria-label="Not included"></span></td><td><span class="pricing-table__yes" aria-label="Included"></span></td></tr>
  </tbody>
  </table>
  </div>
@@ -316,7 +374,7 @@
  </div>
  </footer>
 
- <script src="js/i18n.js?v=35" defer></script>
+ <script src="js/i18n.js?v=36" defer></script>
  <script src="js/main.js?v=38" defer></script>
 </body>
 </html>
