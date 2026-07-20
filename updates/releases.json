@@ -1,12 +1,20 @@
 {
   "releases": [
     {
+      "version": "1.0.2",
+      "releaseDate": "2026-07-22",
+      "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
+      "fileName": "DistributionLife.exe",
+      "releaseNotes": "This update includes fixes in collections module. Route expenses can be categorized while recording collections.",
+      "latest": true
+    },
+    {
       "version": "1.0.1",
       "releaseDate": "2026-07-18",
       "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
       "fileName": "DistributionLife.exe",
       "releaseNotes": "App can update itself. Packaging counts for shells, empties and pallets. Small fixes on the drivers screen.",
-      "latest": true
+      "latest": false
     },
     {
       "version": "1.0.0",
