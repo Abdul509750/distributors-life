@@ -428,7 +428,7 @@
       'pricing.free.f5': 'No commitment',
       'pricing.pro.badge': 'Most Popular',
       'pricing.pro.name': 'Professional',
-      'pricing.pro.price': 'Starting from PKR 17,000/month',
+      'pricing.pro.price': 'Starting from PKR 13,000/month',
       'pricing.pro.desc':
         'Everything you need to manage collections, expenses, drivers, and treasury operations.',
       'pricing.pro.teaserTitle': 'Complete operations suite',
@@ -926,7 +926,7 @@
       'pricing.free.f5': 'کوئی عہد نہیں',
       'pricing.pro.badge': 'سب سے مقبول',
       'pricing.pro.name': 'پروفیشنل',
-      'pricing.pro.price': 'PKR 17,000/ماہ سے شروع',
+      'pricing.pro.price': 'PKR 13,000/ماہ سے شروع',
       'pricing.pro.desc':
         'کلیکشن، اخراجات، ڈرائیورز اور خزانہ آپریشنز منظم کرنے کے لیے ہر وہ چیز جو آپ کو چاہیے۔',
       'pricing.pro.teaserTitle': 'مکمل آپریشنز سوٹ',
