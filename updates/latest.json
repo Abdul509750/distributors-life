@@ -3,7 +3,7 @@
   "releaseDate": "2026-07-23",
   "downloadUrl": "https://distributionlife.vercel.app/downloads/DistributionLife.exe",
   "fileName": "DistributionLife.exe",
-  "sha256": "EF57EFDDCA7466D47FE937BBA422C7360A84B79E40C18ACD341FC53A693CC688",
+  "sha256": "E20B856EBCD52AF1BE5D82DE07197F750FA48F793B5320D4CA2FBB51BD16D569",
   "releaseNotes": "Test Changes",
   "mandatory": false,
   "minSupportedVersion": "1.0.0"
