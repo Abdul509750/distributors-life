@@ -281,7 +281,14 @@
       'dl.title': 'Distribution Life for Windows',
       'dl.intro': 'Download the Windows installer for Distribution Life.',
       'dl.windowsLatest': 'Windows Latest',
-      'dl.version': 'Version 1.0.1',
+      'dl.version': 'Version 1.0.2',
+      'dl.date102': '23 July 2026',
+      'dl.notes102':
+        'Improved auto-update reliability. Multiple route expense categories per collection.',
+      'dl.version102': 'Version 1.0.2',
+      'dl.notes102Short':
+        'Improved auto-update reliability. Multiple route expense categories per collection.',
+      'dl.version101': 'Version 1.0.1',
       'dl.date101': '18 July 2026',
       'dl.notes101':
         'Self-updating app. Packaging counts for shells, empties, and pallets. Fixes on the drivers screen.',
@@ -779,7 +786,14 @@
       'dl.title': 'ڈسٹری بیوشن لائف برائے ونڈوز',
       'dl.intro': 'ڈسٹری بیوشن لائف کا ونڈوز انسٹالر ڈاؤن لوڈ کریں۔',
       'dl.windowsLatest': 'ونڈوز تازہ ترین',
-      'dl.version': 'ورژن ۱.۰.۱',
+      'dl.version': 'ورژن ۱.۰.۲',
+      'dl.date102': '۲۳ جولائی ۲۰۲۶',
+      'dl.notes102':
+        'بہتر آٹو اپ ڈیٹ۔ کلیکشن میں متعدد روٹ اخراجات کی کیٹگریز۔',
+      'dl.version102': 'ورژن ۱.۰.۲',
+      'dl.notes102Short':
+        'بہتر آٹو اپ ڈیٹ۔ کلیکشن میں متعدد روٹ اخراجات کی کیٹگریز۔',
+      'dl.version101': 'ورژن ۱.۰.۱',
       'dl.date101': '۱۸ جولائی ۲۰۲۶',
       'dl.notes101':
         'خود اپ ڈیٹ ہونے والی ایپ۔ شیلز، ایمٹیز اور پیلیٹس کی پیکجنگ کاؤنٹس۔ ڈرائیورز اسکرین پر اصلاحات۔',

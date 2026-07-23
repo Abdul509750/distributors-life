@@ -1,10 +1,10 @@
 {
-  "version": "1.0.1",
-  "releaseDate": "2026-07-18",
-  "downloadUrl": "https://distributorslife.vercel.app/downloads/DistributionLife.exe",
+  "version": "1.0.2",
+  "releaseDate": "2026-07-23",
+  "downloadUrl": "https://distributionlife.vercel.app/downloads/DistributionLife.exe",
   "fileName": "DistributionLife.exe",
-  "sha256": "",
-  "releaseNotes": "App can update itself. Packaging counts for shells, empties and pallets. Small fixes on the drivers screen.",
+  "sha256": "EF57EFDDCA7466D47FE937BBA422C7360A84B79E40C18ACD341FC53A693CC688",
+  "releaseNotes": "App version v1.0.2 features some changes in the auto update features. Along with this made some changes to the expenses section in collections.",
   "mandatory": false,
   "minSupportedVersion": "1.0.0"
 }
