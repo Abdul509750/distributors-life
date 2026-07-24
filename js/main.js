@@ -973,6 +973,107 @@
     });
   }
 
+  function siteRootPrefix() {
+    const path = (window.location.pathname || '').replace(/\\/g, '/');
+    return path.includes('/faq/') ? '../' : '';
+  }
+
+  function initAzadiSideTag() {
+    const offerEnds = new Date('2026-08-31T23:59:59+05:00');
+    if (Date.now() > offerEnds.getTime()) {
+      document.querySelectorAll('.azadi-gift-band').forEach((el) => el.remove());
+      return;
+    }
+
+    try {
+      if (sessionStorage.getItem('dl-azadi-band-dismissed') === '1') {
+        document.querySelectorAll('.azadi-gift-band').forEach((el) => el.remove());
+        return;
+      }
+    } catch (_) {
+      /* ignore */
+    }
+
+    const root = siteRootPrefix();
+    const pricingHref = `${root}pricing.html`;
+    const flagSrc = `${root}assets/images/Pakistani_Flag.webp`;
+
+    let band = document.querySelector('.azadi-gift-band');
+
+    if (!band) {
+      band = document.createElement('aside');
+      band.className = 'azadi-gift-band';
+      band.setAttribute('aria-label', tr('azadi.tag.aria', 'Distribution Life is free of cost until 31st of August'));
+
+      const makeChunk = () =>
+        '<span class="azadi-gift-band__chunk">' +
+        '<img class="azadi-gift-band__flag" src="' +
+        flagSrc +
+        '" alt="" width="28" height="18" loading="lazy" decoding="async" />' +
+        '<strong data-azadi-i18n="azadi.tag.title">Free until 31 Aug</strong>' +
+        '<span class="azadi-gift-band__dot" aria-hidden="true">•</span>' +
+        '<span data-azadi-i18n="azadi.tag.sub">Free of cost</span>' +
+        '<span class="azadi-gift-band__dot" aria-hidden="true">•</span>' +
+        '<span data-azadi-i18n="azadi.tag.eyebrow">14 August</span>' +
+        '<span class="azadi-gift-band__dot" aria-hidden="true">•</span>' +
+        '</span>';
+
+      band.innerHTML =
+        '<a class="azadi-gift-band__link" href="' +
+        pricingHref +
+        '">' +
+        '<span class="azadi-gift-band__track">' +
+        makeChunk() +
+        makeChunk() +
+        makeChunk() +
+        makeChunk() +
+        '</span>' +
+        '</a>' +
+        '<button type="button" class="azadi-gift-band__close" aria-label="' +
+        tr('azadi.tag.dismiss', 'Dismiss banner') +
+        '">&times;</button>';
+
+      document.body.appendChild(band);
+    }
+
+    const applyCopy = () => {
+      const fallbacks = {
+        'azadi.tag.eyebrow': '14 August',
+        'azadi.tag.title': 'Free until 31 Aug',
+        'azadi.tag.sub': 'Free of cost',
+      };
+      band.querySelectorAll('[data-azadi-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-azadi-i18n');
+        el.textContent = tr(key, fallbacks[key] || '');
+      });
+      band.setAttribute('aria-label', tr('azadi.tag.aria', 'Distribution Life is free of cost until 31st of August'));
+      const closeBtn = band.querySelector('.azadi-gift-band__close');
+      if (closeBtn) {
+        closeBtn.setAttribute('aria-label', tr('azadi.tag.dismiss', 'Dismiss banner'));
+      }
+    };
+
+    applyCopy();
+
+    const closeBtn = band.querySelector('.azadi-gift-band__close');
+    if (closeBtn && !closeBtn.dataset.bound) {
+      closeBtn.dataset.bound = '1';
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        band.classList.add('is-hiding');
+        try {
+          sessionStorage.setItem('dl-azadi-band-dismissed', '1');
+        } catch (_) {
+          /* ignore */
+        }
+        window.setTimeout(() => band.remove(), 250);
+      });
+    }
+
+    document.addEventListener('dl:langchange', applyCopy);
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     markMobileExperience();
     initPageLoader();
@@ -989,5 +1090,6 @@
     initSalesForm();
     initFaq();
     initPrivacyToc();
+    initAzadiSideTag();
   });
 })();
