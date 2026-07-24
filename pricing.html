@@ -4,7 +4,7 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title data-i18n="pricing.meta.title">Pricing</title>
- <meta name="description" data-i18n="pricing.meta.description" content="Simple pricing for distribution operations. Start with a free demo, then choose Professional or Enterprise for collections, expenses, drivers, treasury, and reporting." />
+ <meta name="description" data-i18n="pricing.meta.description" content="Independence Day offer: Distribution Life Professional is completely free until 31 August. No cost for collections, expenses, drivers, treasury, and reporting." />
  <link rel="icon" type="image/png" href="assets/images/HomeIcon.png" />
  <link rel="apple-touch-icon" href="assets/images/HomeIcon.png" />
 
@@ -29,7 +29,7 @@
  },
  };
  </script>
- <link rel="stylesheet" href="css/styles.css?v=36" />
+ <link rel="stylesheet" href="css/styles.css?v=38" />
 </head>
 
 <body class="font-sans text-slate-700 antialiased min-h-screen flex flex-col">
@@ -83,12 +83,12 @@
  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-24 relative">
  <div data-reveal class="max-w-3xl mx-auto text-center">
  <p class="section-label text-xs font-semibold uppercase tracking-widest text-slate-400" data-i18n="pricing.hero.label">Pricing</p>
- <h1 id="pricing-hero-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="pricing.hero.title">Simple Pricing for Distribution Operations</h1>
+ <h1 id="pricing-hero-heading" class="saas-headline mt-4 text-3xl sm:text-4xl lg:text-5xl" data-i18n="pricing.hero.title">Independence Day: Free Until 31 August</h1>
  <p class="saas-lead mt-5 text-lg sm:text-xl" data-i18n="pricing.hero.body">
- Start with a free demo, then choose the plan that fits your organization. Paid plans include the full Distribution Life platform for collections, expenses, drivers, treasury, and reporting.
+ Celebrate 14 August with us — the full Distribution Life platform is completely free until 31 August. No cost. No catch. Just run your collections, drivers, expenses, and treasury.
  </p>
  <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
- <a href="contact.html#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="pricing.hero.ctaDemo">Book a Demo</a>
+ <a href="contact.html#contact-form" class="btn-primary btn-pill inline-flex items-center justify-center bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent-hover" data-i18n="pricing.hero.ctaDemo">Claim Free Access</a>
  <a href="contact.html" class="btn-outline-pill inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold" data-i18n="pricing.hero.ctaContact">Contact Sales</a>
  </div>
  </div>
@@ -119,6 +119,16 @@
  <div data-reveal class="section-intro text-center max-w-2xl mx-auto mb-12">
  <h2 id="pricing-plans-heading" class="text-2xl sm:text-3xl font-bold tracking-tight text-navy" data-i18n="pricing.plans.title">Choose Your Plan</h2>
  </div>
+
+ <div data-reveal class="pricing-azadi-banner" role="status">
+ <img src="assets/images/Pakistani_Flag.webp" alt="" class="pricing-azadi-banner__flag" width="72" height="48" loading="lazy" />
+ <div class="pricing-azadi-banner__copy">
+ <p class="pricing-azadi-banner__eyebrow" data-i18n="pricing.azadi.eyebrow">14 August Independence Day Offer</p>
+ <p class="pricing-azadi-banner__title" data-i18n="pricing.azadi.title">100% free until 31 August — no cost at all</p>
+ <p class="pricing-azadi-banner__body" data-i18n="pricing.azadi.body">Full Professional platform free through 31 Aug. Regular price returns after the offer ends.</p>
+ </div>
+ </div>
+
  <div class="pricing-cards" data-stagger="120">
 
  <!-- Free / Demo -->
@@ -136,7 +146,7 @@
  </span>
  <div>
  <p class="pricing-card__teaser-title" data-i18n="pricing.free.teaserTitle">Full platform</p>
- <p class="pricing-card__teaser-body" data-i18n="pricing.free.teaserBody">Available from Professional</p>
+ <p class="pricing-card__teaser-body" data-i18n="pricing.free.teaserBody">Free until 31 August on Professional</p>
  </div>
  </div>
  <p class="pricing-card__includes" data-i18n="pricing.free.includes">Demo includes:</p>
@@ -149,22 +159,25 @@
  </ul>
  </article>
 
- <!-- Professional -->
- <article data-reveal class="pricing-card pricing-card--featured">
- <span class="pricing-card__badge" data-i18n="pricing.pro.badge">Most Popular</span>
+ <!-- Professional — Independence Day free offer -->
+ <article data-reveal class="pricing-card pricing-card--featured pricing-card--azadi">
+ <span class="pricing-card__badge pricing-card__badge--azadi" data-i18n="pricing.pro.badge">Free till 31 Aug</span>
  <h3 class="pricing-card__name" data-i18n="pricing.pro.name">Professional</h3>
  <p class="pricing-card__price">
- <span class="pricing-card__amount" data-i18n="pricing.pro.price">Starting from PKR 13,000/month</span>
+ <span class="pricing-card__amount pricing-card__amount--free" data-i18n="pricing.pro.price">PKR 0</span>
+ <span class="pricing-card__price-note" data-i18n="pricing.pro.priceNote">until 31 August</span>
  </p>
- <p class="pricing-card__seats" data-i18n="pricing.pro.desc">Everything you need to manage collections, expenses, drivers, and treasury operations.</p>
- <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta pricing-card__cta--early" data-i18n="pricing.pro.cta">Book a Demo</a>
- <div class="pricing-card__teaser pricing-card__teaser--pro">
- <span class="pricing-card__teaser-icon" aria-hidden="true">
- <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.9 7.2 18l.9-5.4L4.2 8.7l5.4-.8L12 3z"/></svg>
- </span>
+ <p class="pricing-card__was">
+ <span class="pricing-card__was-label" data-i18n="pricing.pro.wasLabel">Was</span>
+ <s data-i18n="pricing.pro.wasPrice">PKR 13,000/month</s>
+ </p>
+ <p class="pricing-card__seats" data-i18n="pricing.pro.desc">Everything you need to manage collections, expenses, drivers, and treasury — completely free for Independence Day.</p>
+ <a href="contact.html#contact-form" class="btn-primary btn-pill pricing-card__cta pricing-card__cta--early pricing-card__cta--azadi" data-i18n="pricing.pro.cta">Claim Free Access</a>
+ <div class="pricing-card__teaser pricing-card__teaser--azadi">
+ <img src="assets/images/Pakistani_Flag.webp" alt="" class="pricing-card__flag" width="40" height="27" loading="lazy" />
  <div>
- <p class="pricing-card__teaser-title" data-i18n="pricing.pro.teaserTitle">Complete operations suite</p>
- <p class="pricing-card__teaser-body" data-i18n="pricing.pro.teaserBody">Collections, drivers, expenses, treasury &amp; reporting</p>
+ <p class="pricing-card__teaser-title" data-i18n="pricing.pro.teaserTitle">Independence Day offer</p>
+ <p class="pricing-card__teaser-body" data-i18n="pricing.pro.teaserBody">Full platform free until 31 August — zero cost</p>
  </div>
  </div>
  <p class="pricing-card__includes" data-i18n="pricing.pro.includes">Professional includes:</p>
@@ -374,7 +387,7 @@
  </div>
  </footer>
 
- <script src="js/i18n.js?v=36" defer></script>
+ <script src="js/i18n.js?v=37" defer></script>
  <script src="js/main.js?v=38" defer></script>
 </body>
 </html>
